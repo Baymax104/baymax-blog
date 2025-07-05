@@ -8,7 +8,6 @@ tags:
   - 机器学习
   - SVM
   - 支持向量机
-math: true
 date: 2025-07-05 22:16
 updated: 2025-07-05 22:31
 ---
@@ -23,10 +22,10 @@ $$
 $$
 假设超平面能够将样本正确分类，则有如下条件
 $$
-\begin{align}\left\{\begin{aligned}
+\left\{\begin{aligned}
 \omega^Tx+b&\ge+1,&y_i&=1\\
 \omega^Tx+b&\le-1,&y_i&=-1
-\end{aligned}\right.\end{align}
+\end{aligned}\right.
 $$
 距离超平面最近的几个使上式等号成立的样本点称为支持向量，异类支持向量到超平面的距离之和称为间隔
 $$
@@ -34,10 +33,10 @@ $$
 $$
 在满足约束条件的情况下，找到最大间隔，即最小化$\vert\vert\omega\vert\vert$，等价于最大化$\vert\vert\omega\vert\vert$，SVM基本型如下
 $$
-\begin{align}
+\begin{aligned}
 \min\limits_{\omega,b}\quad&{1\over2}\vert\vert\omega\vert\vert^2\\
 s.t.\quad &y_i\cdot(\omega^Tx_i+b)\ge1,\quad i=1,2,...,m
-\end{align}
+\end{aligned}
 $$
 
 ## 核函数

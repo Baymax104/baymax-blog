@@ -100,25 +100,6 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: stellar
 
-markdown:
-  preset: "default"
-  render:
-    html: true
-    xhtmlOut: false
-    breaks: false
-    linkify: false
-    typographer: true
-    quotes: '“”‘’'
-  plugins:
-    - markdown-it-abbr # https://github.com/markdown-it/markdown-it-abbr
-    - markdown-it-cjk-breaks # https://github.com/markdown-it/markdown-it-cjk-breaks
-    - markdown-it-container # https://github.com/markdown-it/markdown-it-container
-    - markdown-it-emoji # https://github.com/markdown-it/markdown-it-emoji
-    - markdown-it-footnote # https://github.com/markdown-it/markdown-it-footnote
-    - markdown-it-ins # https://github.com/markdown-it/markdown-it-ins
-    - markdown-it-mark # https://github.com/markdown-it/markdown-it-mark
-    - markdown-it-sub # https://github.com/markdown-it/markdown-it-sub
-    - markdown-it-sup # https://github.com/markdown-it/markdown-it-sup
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
