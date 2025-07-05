@@ -1,0 +1,9 @@
+logo:
+  subtitle: "Talk is cheap. | Show me the code."
+
+article:
+  type: tech
+  auto_excerpt: 100
+  related_posts:
+    enable: true
+    title: 您可能感兴趣的文章

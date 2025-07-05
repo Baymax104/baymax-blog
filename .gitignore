@@ -8,3 +8,8 @@ public/
 _multiconfig.yml
 
 .idea
+
+source/*
+!source/_posts
+!source/_drafts
+!source/images
