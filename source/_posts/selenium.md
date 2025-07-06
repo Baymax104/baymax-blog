@@ -1,0 +1,150 @@
+---
+title: Selenium基础
+categories: [Python, 爬虫]
+tags: [Python, 爬虫, Selenium]
+date: 2024-09-11 18:53
+updated: 2025-07-07 00:26
+---
+## 开始
+
+Selenium 是一个用于自动化 Web 浏览器操作的工具，广泛应用于 Web 应用程序测试、网页数据抓取和任务自动化等场景
+
+Selenium 通过使用 WebDriver 支持市场上所有主流浏览器的自动化。WebDriver 是一个 API 和协议，它定义了一个语言中立的接口，用于控制 web 浏览器的行为。每个浏览器都有一个特定的 WebDriver 实现，称为驱动程序。驱动程序是负责委派给浏览器的组件，并处理与 Selenium 和浏览器之间的通信
+
+安装 selenium
+
+```
+pip install selenium
+```
+
+使用 npm 安装 ChromeDriver 或 EdgeDriver
+
+```
+npm i -g chromedriver
+npm i -g edgedriver
+```
+
+使用 selenium 完成浏览器启动和关闭
+
+```python
+from selenium import webdriver
+import time
+
+driver = webdriver.Chrome()  # 创建浏览器会话
+driver.get('https://www.baidu.com')  # 访问网页
+time.sleep(5)
+driver.quit()  # close()方法也可关闭浏览器，但在官方文档中建议使用quit()方法
+```
+
+## 浏览器选项
+
+创建浏览器会话时，可以传入浏览器选项参数，使用浏览器选项类来包装
+
+```python
+options = webdriver.ChromeOptions()  # 创建选项类对象
+# 设置options
+options.browser_version = 'stable'  # 效果同set_capability('browserVersion', 'stable')
+options.set_capability('pageLoadStrategy', PageLoadStrategy.eager)  # value也可传入'eager'
+options.add_argument('--headless')  # 设置无头浏览器
+driver = webdriver.Chrome(options=options)
+```
+
+选项类可以设置两类参数
+
+- Capabilities：表示浏览器特性及系统的配置
+
+    该类参数通过 `BaseOptions` 类包装
+
+    - 直接设置配置项属性
+    - `set_capability()`：设置配置项
+    - `capabilities`：获取当前浏览器的所有 capabilities 配置
+
+    对于特定浏览器，options 中包含了默认的 capabilities 配置，默认配置在 `desired_capabilities.py` 中定义
+
+    W3C 文档中定义的 Capabilities 配置见：[WebDriver (w3c.github.io)](https://w3c.github.io/webdriver/#capabilities)
+
+    Selenium 中设置 Capabilities 配置见：[浏览器选项](https://www.selenium.dev/zh-cn/documentation/webdriver/drivers/options/)
+
+- Arguments：浏览器启动参数
+
+    该类参数通过 `ArgOptions` 类包装
+
+    - `add_argument()`：设置启动参数
+    - `arguments`：获取当前浏览器的所有 arguments
+
+    不同浏览器定义的 arguments 不同，具体参数应查看具体浏览器的文档，见文档：[支持的浏览器列表](https://www.selenium.dev/zh-cn/documentation/webdriver/browsers/)
+
+    ChromeOptions 类文档：[ChromeOptions](https://developer.chrome.com/docs/chromedriver/capabilities?hl=zh-cn#recognized_capabilities)
+
+    Chrome 启动参数文档：[List of Chromium Command Line Switches](https://peter.sh/experiments/chromium-command-line-switches/)
+
+## 查找元素
+
+selenium 使用两个方法来查找 DOM 元素
+
+- `find_element`：查找单个元素，若匹配多个元素，仅返回第一个
+- `find_elements`：查找多个元素
+
+两个方法都接收两个参数
+
+- `by`：查找策略，传入一个字符串或 `By` 枚举类
+- `value`：匹配值
+
+```python
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+driver = webdriver.Chrome()
+driver.get('https://www.baidu.com')
+element = driver.find_element(By.ID, 'my_id')  #  查找id='my-id'的元素
+elements = driver.find_elements(By.CLASS_NAME, 'my_class')  # 查找class='my-class'的元素
+```
+
+By 枚举类包含以下值
+
+- `ID = 'id'`：根据 id 属性匹配
+- `XPATH = 'xpath'`：根据 xpath 表达式匹配
+- `LINK_TEXT = 'link text'`：根据超链接标签文本精确匹配
+- `PARTIAL_LINK_TEXT = 'partial link text'`：根据超链接标签文本模糊匹配
+- `NAME = 'name'`：根据 name 属性匹配
+- `TAG_NAME = 'tag name'`：根据标签名称匹配
+- `CLASS_NAME = 'class name'`：根据 class 属性等值匹配
+- `CSS_SELECTOR = 'css selector'`：根据 css 选择器匹配
+
+## 获取元素信息
+
+查找元素返回的元素对象为 `WebElement` 类型，通过该对象可以获取元素的信息
+
+- `is_enabled()`：元素是否可用
+- `is_selected()`：元素是否选中
+- `is_displayed()`：元素是否显示
+- `tag_name`：元素标签名称
+- `text`：元素文本内容
+- `get_attribute('attr')`：获取元素属性值
+
+## 元素交互
+
+调用 WebElement 对象的相关方法进行交互
+
+- `click()`：点击
+- `send_keys()`：发送内容，对于可编辑元素，发送编辑内容
+- `clear()`：清空，元素需要是可编辑、可重置的
+
+ActionChains 交互
+
+ActionChains 将一系列键盘和鼠标操作存储在一个队列中，在调用 `perform()` 方法后，依次执行操作
+
+```python
+clickable = driver.find_element(By.ID, "clickable")
+ActionChains(driver)\
+    .move_to_element(clickable)\
+    .pause(1)\
+    .click_and_hold()\
+    .pause(1)\
+    .send_keys("abc")\
+    .perform()
+```
+
+键盘操作见文档：[键盘操作](https://www.selenium.dev/zh-cn/documentation/webdriver/actions_api/keyboard/)
+
+鼠标操作见文档：[Mouse actions](https://www.selenium.dev/zh-cn/documentation/webdriver/actions_api/mouse/)
