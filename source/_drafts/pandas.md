@@ -1,14 +1,10 @@
 ---
 title: Python数据分析——Pandas
 categories: [Python, 数据分析]
-tags:
-  - Pandas
-  - Python
-  - 数据分析
+tags: [Pandas, Python, 数据分析]
 date: 2025-07-05 22:16
-updated: 2025-07-05 22:31
+updated: 2025-07-06 03:40
 ---
-# Python数据分析——Pandas
 ## Series
 
 Series是一维数据结构，能够存储各种数据类型

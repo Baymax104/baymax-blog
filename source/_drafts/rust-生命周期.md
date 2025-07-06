@@ -1,12 +1,10 @@
 ---
 title: Rust基础——生命周期
 categories: [Rust]
-tags:
-  - Rust
+tags: [Rust]
 date: 2025-07-05 22:16
-updated: 2025-07-05 22:32
+updated: 2025-07-06 03:40
 ---
-# Rust基础——生命周期
 ## 开始
 
 生命周期就是引用的有效作用域，用于避免悬垂引用问题

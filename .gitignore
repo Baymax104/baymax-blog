@@ -9,7 +9,6 @@ _multiconfig.yml
 
 .idea
 
-source/*
-!source/_posts
-!source/_drafts
-!source/images
+source/.obsidian
+source/.obsidian.vimrc
+source/_templates

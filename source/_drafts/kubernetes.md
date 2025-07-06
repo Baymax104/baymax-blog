@@ -1,14 +1,10 @@
 ---
 title: Kubernetes入门
-categories:
-  - 开发相关
-tags:
-  - Kubernetes
-  - k8s
+categories: [开发相关]
+tags: [Kubernetes, k8s]
 date: 2025-07-05 22:16
-updated: 2025-07-05 22:28
+updated: 2025-07-06 03:40
 ---
-# Kubernetes入门
 ## 开始
 
 Kubernetes（K8S）是容器集群管理系统，是一个开源的平台，可以实现容器集群的自动化部署、自动扩缩容、维护等功能

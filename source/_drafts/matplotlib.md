@@ -8,12 +8,11 @@ tags:
   - Python
   - 数据分析
 date: 2025-07-05 22:16
-updated: 2025-07-05 22:28
+updated: 2025-07-06 03:40
 ---
-# Python数据分析——Matplotlib
 ### 基础
 
-####mayplotlib图形组成
+#### mayplotlib图形组成
 
 <img src="https://typora-images-1309988842.cos.ap-beijing.myqcloud.com/img/1519122294-2.gif" alt="Matplotlib图像组成" style="zoom:67%;" />
 

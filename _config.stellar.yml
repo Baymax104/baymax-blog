@@ -4,6 +4,7 @@ logo:
 article:
   type: tech
   auto_excerpt: 100
-  related_posts:
-    enable: true
-    title: 您可能感兴趣的文章
+
+tag_plugins:
+  image:
+    fancybox: true

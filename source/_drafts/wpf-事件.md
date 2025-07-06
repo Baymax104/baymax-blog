@@ -1,13 +1,10 @@
 ---
 title: WPF基础——事件
 categories: [CSharp, WPF]
-tags:
-  - CSharp
-  - WPF
+tags: [CSharp, WPF]
 date: 2025-07-05 22:16
-updated: 2025-07-05 22:32
+updated: 2025-07-06 03:40
 ---
-# WPF基础——事件
 ## 开始
 
 事件模型的3个关键点

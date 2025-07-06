@@ -1,14 +1,10 @@
 ---
 title: FastAPI基础
-categories:
-  - Python
-tags:
-  - Python
-  - FastAPI
+categories: [Python]
+tags: [Python, FastAPI]
 date: 2025-07-05 21:44
-updated: 2025-07-05 21:46
+updated: 2025-07-06 03:40
 ---
-# FastAPI基础
 ## 开始
 
 FastAPI是一个用于构建API的现代、快速（高性能）的 web 框架

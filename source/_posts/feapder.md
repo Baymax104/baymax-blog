@@ -1,21 +1,17 @@
 ---
 title: feapder基础
 categories: [Python, 爬虫]
-tags:
-  - feapder
-  - Python
-  - 爬虫
+tags: [feapder, Python, 爬虫]
 date: 2024-08-31 14:33
-updated: 2025-07-05 23:02
+updated: 2025-07-06 15:38
 ---
-# feapder基础
 ## 开始
 
-feapder是一款上手简单，功能强大的Python爬虫框架，内置AirSpider、Spider、TaskSpider、BatchSpider四种爬虫解决不同场景的需求，支持断点续爬、监控报警、浏览器渲染、海量数据去重等功能，更有功能强大的爬虫管理系统feaplat为其提供方便的部署及调度
+feapder 是一款上手简单，功能强大的 Python 爬虫框架，内置 AirSpider、Spider、TaskSpider、BatchSpider 四种爬虫解决不同场景的需求，支持断点续爬、监控报警、浏览器渲染、海量数据去重等功能，更有功能强大的爬虫管理系统 feaplat 为其提供方便的部署及调度
 
 官方文档：[feapder官方文档](https://feapder.com/#/README)
 
-安装完整版feapder
+安装完整版 feapder
 
 ```shell
 pip install "feapder[all]"
@@ -55,11 +51,11 @@ if __name__ == "__main__":
 
 ## 创建爬虫
 
-create命令用于创建feapder项目，常用选项有`-p`、`-s`、`-i`
+create 命令用于创建 feapder 项目，常用选项有 `-p`、`-s`、`-i`
 
 ---
 
-使用`-p`选项创建一个爬虫项目
+使用 `-p` 选项创建一个爬虫项目
 
 ```
 feapder create -p <project_name>
@@ -81,16 +77,16 @@ my_spider
      └─ __init__.py
 ```
 
--   items：文件夹存放与数据库表映射的item
+-   items：文件夹存放与数据库表映射的 item
 -   spiders：文件夹存放爬虫脚本
 -   main.py：运行入口
 -   setting.py：爬虫配置文件
 
-main.py文件中实现命令行解析来调用不同的爬虫，使用feapder封装的`ArgumentParser`解析，`add_argument`方法中的`function`参数指定调用的回调函数，可在回调函数中启动爬虫
+main.py 文件中实现命令行解析来调用不同的爬虫，使用 feapder 封装的 `ArgumentParser` 解析，`add_argument` 方法中的 `function` 参数指定调用的回调函数，可在回调函数中启动爬虫
 
 ---
 
-使用`-s`选项创建单个爬虫
+使用 `-s` 选项创建单个爬虫
 
 ```
 feapder create -s <spider_name>
@@ -105,53 +101,53 @@ feapder create -s <spider_name>
 
 ---
 
-使用`-i`选项创建数据库表的映射对象
+使用 `-i` 选项创建数据库表的映射对象
 
 ```
 feapder create -i <item_name>
 ```
 
-可以选择四种item模板
+可以选择四种 item 模板
 
 -   Item
--   字典Item
+- 字典 Item
 -   UpdateItem
--   字典UpdateItem 
+- 字典 UpdateItem
 
 其他命令行工具详见文档：[命令行工具 - feapder官方文档](https://feapder.com/#/command/cmdline)
 
 ## Request
 
-Request为feapder的下载器，基于requests进行了封装，因此支持requests的所有参数
+Request 为 feapder 的下载器，基于 requests 进行了封装，因此支持 requests 的所有参数
 
 常用属性
 
 | 属性               | 描述                                |
 | ---------------- | --------------------------------- |
-| url              | 待抓取url                            |
+| url              | 待抓取 url                            |
 | retry_times      | 当前重试次数                            |
-| priority         | 请求优先级，越小越优先，默认300                 |
+| priority         | 请求优先级，越小越优先，默认 300                 |
 | parser_name      | 回调函数所在的类名，默认为当前类                  |
 | callback         | 回调函数，可以是函数，也可是函数名                 |
 | filter_repeat    | 是否需要去重                            |
 | auto_request     | 是否需要自动请求下载网页，默认是                  |
 | request_sync     | 是否同步请求下载网页，默认异步                   |
-| use_session      | 是否使用session方式                     |
-| download_midware | 下载中间件，默认为parser中的download_midware |
+| use_session      | 是否使用 session 方式                     |
+| download_midware | 下载中间件，默认为 parser 中的 download_midware |
 | render           | 是否用浏览器渲染，对于动态加载页面，使用浏览器渲染后再获取源码   |
 | render_time      | 渲染时长，即打开网页等待指定时间后再获取源码            |
 | method           | 请求方式                              |
 | params           | 请求参数                              |
-| data             | 请求body                            |
+| data             | 请求 body                            |
 | headers          | 请求头                               |
-| cookies          | 字典或CookieJar对象                    |
+| cookies          | 字典或 CookieJar 对象                    |
 | timeout          | 等待服务器数据的超时限制                      |
-| allow_redirects  | 是否允许跟踪POST/PUT/DELETE方法的重定向       |
-| **kwargs         | 自定义数据，可传递到parse方法中                |
+| allow_redirects  | 是否允许跟踪 POST/PUT/DELETE 方法的重定向       |
+| **kwargs         | 自定义数据，可传递到 parse 方法中                |
 
 ### 发送请求
 
-调用`get_response`方法获取响应，`save_cached`参数指定是否将响应缓存到Redis，需要在`setting.py`或在环境变量中设置Redis
+调用 `get_response` 方法获取响应，`save_cached` 参数指定是否将响应缓存到 Redis，需要在 `setting.py` 或在环境变量中设置 Redis
 
 ```python
 def get_response(self, save_cached=False):
@@ -165,7 +161,7 @@ def get_response(self, save_cached=False):
 
 ### 获取缓存的响应
 
-调用`get_response_from_cached`方法从缓存中获取响应，缓存同样依赖redis，因此需要先配置好redis连接信息
+调用 `get_response_from_cached` 方法从缓存中获取响应，缓存同样依赖 redis，因此需要先配置好 redis 连接信息
 
 ```python
 def get_response_from_cached(self, save_cached=True):
@@ -180,29 +176,29 @@ def get_response_from_cached(self, save_cached=True):
 
 ## Response
 
-Response对requests返回的response进行了封装，因此支持response所有方法
+Response 对 requests 返回的 response 进行了封装，因此支持 response 所有方法
 
 ### 响应解析
 
--   支持xpath选择器
+- 支持 xpath 选择器
 
     ```python
     response.xpath("//a/@href")
     ```
 
--   支持css选择器
+- 支持 css 选择器
 
     ```python
     response.css("a::attr(href)")
     ```
 
--   支持正则表达式
+- 支持正则表达式
 
     ```python
     response.re("<a.*?href='(.*?)'")
     ```
 
--   支持BeautifulSoup
+- 支持 BeautifulSoup
 
     ```python
     response.bs4().title
@@ -210,37 +206,37 @@ Response对requests返回的response进行了封装，因此支持response所有
 
 ### 常用功能
 
--   获取响应源码
+- 获取响应源码
 
     ```python
     response.text
     ```
 
--   获取json数据
+- 获取 json 数据
 
     ```python
     response.json
     ```
 
--   查看下载内容：打开浏览器，渲染下载内容
+- 查看下载内容：打开浏览器，渲染下载内容
 
     ```python
     response.open()
     ```
 
--   将`requests.Response`转换为`feapder.Response`
+- 将 `requests.Response` 转换为 `feapder.Response`
 
     ```python
     response = feapder.Response(response)
     ```
 
--   序列化
+- 序列化
 
     ```python
     response_dict = response.to_dict
     ```
 
--   反序列化
+- 反序列化
 
     ```python
     feapder.Response.from_dict(response_dict)
@@ -248,7 +244,7 @@ Response对requests返回的response进行了封装，因此支持response所有
 
 ## AirSpider
 
-AirSpider是一款轻量爬虫，面对一些数据量较少，无需断点续爬，无需分布式采集的需求，可采用此爬虫
+AirSpider 是一款轻量爬虫，面对一些数据量较少，无需断点续爬，无需分布式采集的需求，可采用此爬虫
 
 ### 基本使用
 
@@ -310,7 +306,7 @@ if __name__ == "__main__":
 
 ### 数据入库
 
-AirSpider不支持自动入库，需要借助数据库接口模块手动实现，框架内封装了`MysqlDB`、`RedisDB`等模块，可以通过这些模块操作数据库
+AirSpider 不支持自动入库，需要借助数据库接口模块手动实现，框架内封装了 `MysqlDB`、`RedisDB` 等模块，可以通过这些模块操作数据库
 
 ```python
 from feapder.db.mysqldb import MysqlDB
@@ -329,17 +325,17 @@ def __init__(self, *args, **kwargs):
     # MysqlDB操作方法详见官方文档
 ```
 
-MysqlDB操作方法文档：[MysqlDB](https://feapder.com/#/source_code/MysqlDB)
+MysqlDB 操作方法文档：[MysqlDB](https://feapder.com/#/source_code/MysqlDB)
 
 ## Spider
 
-Spider是一款基于redis的分布式爬虫，适用于海量数据采集，支持断点续爬、爬虫报警、数据自动入库等功能
+Spider 是一款基于 redis 的分布式爬虫，适用于海量数据采集，支持断点续爬、爬虫报警、数据自动入库等功能
 
-Spider支持AirSpider的所有操作，此外支持数据自动入库
+Spider 支持 AirSpider 的所有操作，此外支持数据自动入库
 
-Spider爬取的数据需要经过item封装，在parse方法中通过`yield`返回item，数据库中会自动创建对应的表，将返回的item插入到表中
+Spider 爬取的数据需要经过 item 封装，在 parse 方法中通过 `yield` 返回 item，数据库中会自动创建对应的表，将返回的 item 插入到表中
 
-定义item如下
+定义 item 如下
 
 ```python
 from feapder import Item
@@ -356,7 +352,7 @@ class SpiderDataItem(Item):
         self.title = None  # type : varchar(255) | allow_null : YES | key :  | default_value : None | extra : | column_comment :
 ```
 
-Spider实现如下
+Spider 实现如下
 
 ```python
 import feapder
@@ -377,9 +373,9 @@ class TestSpider(feapder.Spider):
 
 ## TaskSpider
 
-TaskSpider是一款分布式爬虫，内部封装了取种子任务的逻辑，内置支持从redis或者mysql获取任务，也可通过自定义实现从其他来源获取任务
+TaskSpider 是一款分布式爬虫，内部封装了取种子任务的逻辑，内置支持从 redis 或者 mysql 获取任务，也可通过自定义实现从其他来源获取任务
 
-种子表指的是一个初始URL列表，通常包含id和url两个字段，每个url就是种子，它们是爬虫开始爬取的起点，通过从这些种子url中获取内容，爬虫可以提取其他链接并继续递归抓取更多页面，直到完成预定的任务
+种子表指的是一个初始 URL 列表，通常包含 id 和 url 两个字段，每个 url 就是种子，它们是爬虫开始爬取的起点，通过从这些种子 url 中获取内容，爬虫可以提取其他链接并继续递归抓取更多页面，直到完成预定的任务
 
 示例代码
 
@@ -466,13 +462,13 @@ if __name__ == "__main__":
 
 ## BatchSpider
 
-BatchSpider是一款分布式批次爬虫，对于需要周期性采集的数据，优先考虑使用本爬虫
+BatchSpider 是一款分布式批次爬虫，对于需要周期性采集的数据，优先考虑使用本爬虫
 
-使用BatchSpider时，种子表中需要包含id、url、state字段，state字段有4种状态，分别是待抓取(0)、抓取完毕(1)、抓取中(2)、抓取失败(-1)
+使用 BatchSpider 时，种子表中需要包含 id、url、state 字段，state 字段有 4 种状态，分别是待抓取 (0)、抓取完毕 (1)、抓取中 (2)、抓取失败 (-1)
 
-在爬取时，feapder会分批下发状态为0的任务到redis任务队列，并更新状态为2。当所有状态0任务都下发完毕且任务队列中没有任务，feapder会检查表中是否还有状态2的任务，将其更新为状态0，继续下发。当表中任务的状态只有1或-1时，爬取结束
+在爬取时，feapder 会分批下发状态为 0 的任务到 redis 任务队列，并更新状态为 2。当所有状态 0 任务都下发完毕且任务队列中没有任务，feapder 会检查表中是否还有状态 2 的任务，将其更新为状态 0，继续下发。当表中任务的状态只有 1 或 -1 时，爬取结束
 
-状态1和-1的任务需要手动维护，当任务完成时需要更新状态为1，当任务发生异常，需要更新状态为-1，使用`update_task_batch`方法更新任务状态
+状态 1 和 -1 的任务需要手动维护，当任务完成时需要更新状态为 1，当任务发生异常，需要更新状态为 -1，使用 `update_task_batch` 方法更新任务状态
 
 示例代码
 
@@ -540,9 +536,9 @@ if __name__ == "__main__":
 
 ## 爬虫集成
 
-feapder支持将多个爬虫集成为一个爬虫，统一下发任务进行爬取
+feapder 支持将多个爬虫集成为一个爬虫，统一下发任务进行爬取
 
-对于集成Spider爬虫，只需将继承的Spider类改为BaseParser类，BaseParser类支持Spider类相同的方法
+对于集成 Spider 爬虫，只需将继承的 Spider 类改为 BaseParser 类，BaseParser 类支持 Spider 类相同的方法
 
 ```python
 import feapder
@@ -561,9 +557,9 @@ spider.add_parser(TestParser)  # 注意此处传入类名
 spider.start()
 ```
 
-对于集成BatchSpider，需要将继承类改为BatchParser类，BatchParser类支持BatchSpider类相同的方法，除了`init_task`方法，所有的BatchParser都使用集成后BatchSpider的`init_task`方法
+对于集成 BatchSpider，需要将继承类改为 BatchParser 类，BatchParser 类支持 BatchSpider 类相同的方法，除了 `init_task` 方法，所有的 BatchParser 都使用集成后 BatchSpider 的 `init_task` 方法
 
-在种子表中，需要添加一个`parser_name`字段，指定该任务交由哪个解析器解析
+在种子表中，需要添加一个 `parser_name` 字段，指定该任务交由哪个解析器解析
 
 ```python
 import feapder
@@ -595,4 +591,3 @@ spider.add_parser(TencentNewsParser)
 # spider.start_monitor_task()
 # spider.start()
 ```
-
