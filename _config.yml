@@ -4,8 +4,8 @@
 
 # Site
 title: Baymax's Blog
-avatar: https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/avatar.png
-favicon: https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/favicon.ico
+subtitle: "Talk is cheap. | Show me the code."
+avatar: /images/icon.svg
 description: '这里是Baymax小振的博客，一个热爱编程、探索科技世界的程序员的小天地。'
 keywords:
 author: John Wei
