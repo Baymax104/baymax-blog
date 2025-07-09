@@ -1,10 +1,11 @@
 ---
 title: Kotlin高级——集合
-categories: [Kotlin, 高级篇]
+categories: [Kotlin]
 tags: [Kotlin, Android]
 date: 2024-03-10 23:13
 updated: 2025-07-07 01:25
 banner: /images/kotlin.jpg
+topic: kotlin
 ---
 ## 开始
 
@@ -12,7 +13,7 @@ kotlin 将 Map、Set 和 List 都分为只读和可变两种类型，只读类�
 
 容器类图如下
 
-![](kotlin高级-集合-1751822581376.png)
+![](kotlin-集合-1751822581376.png)
 
 容器默认实现
 

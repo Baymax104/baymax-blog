@@ -1,10 +1,11 @@
 ---
 title: Kotlin高级——反射
-categories: [Kotlin, 高级篇]
+categories: [Kotlin]
 tags: [Kotlin, Android]
 date: 2024-03-10 22:57
-updated: 2025-07-07 01:26
+updated: 2025-07-09 17:24
 banner: /images/kotlin.jpg
+topic: kotlin
 ---
 ## 开始
 
@@ -23,7 +24,7 @@ Kotlin 中可以直接使用 java 的反射，目前 java 反射的性能还是�
 
 kotlin 反射与 java 反射的类结构组成
 
-![](kotlin高级-反射-1751822808903.png)
+![](kotlin-反射-1751822808903.png)
 
 ## 类引用
 

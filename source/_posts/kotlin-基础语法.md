@@ -1,10 +1,11 @@
 ---
 title: Kotlin基础——基础语法
-categories: [Kotlin, 基础篇]
+categories: [Kotlin]
 tags: [Kotlin, Android]
 date: 2024-03-08 23:10
-updated: 2025-07-07 01:34
+updated: 2025-07-09 17:34
 banner: /images/kotlin.jpg
+topic: kotlin
 ---
 ## 开始
 

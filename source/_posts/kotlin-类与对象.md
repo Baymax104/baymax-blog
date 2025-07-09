@@ -1,10 +1,11 @@
 ---
 title: Kotlin基础——类与对象
-categories: [Kotlin, 基础篇]
+categories: [Kotlin]
 tags: [Kotlin, Android]
 date: 2024-03-09 19:33
-updated: 2025-07-07 01:27
+updated: 2025-07-09 17:33
 banner: /images/kotlin.jpg
+topic: kotlin
 ---
 ## 开始
 

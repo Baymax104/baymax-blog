@@ -4,6 +4,7 @@ categories: [开发相关]
 tags: [Jekyll, CLI, Typer]
 date: 2024-05-24 16:31
 updated: 2025-07-07 01:06
+repo: baymax104/jekyll-cli
 ---
 ## 项目背景
 

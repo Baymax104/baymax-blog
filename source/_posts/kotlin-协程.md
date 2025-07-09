@@ -1,10 +1,11 @@
 ---
 title: Kotlin高级——协程
-categories: [Kotlin, 高级篇]
+categories: [Kotlin]
 tags: [Kotlin, Android]
 date: 2024-04-13 19:45
 updated: 2025-07-07 01:16
 banner: /images/kotlin.jpg
+topic: kotlin
 ---
 ## 开始
 
@@ -477,7 +478,7 @@ flow.cancellable()
 
 Channel 是一个并发安全的队列，可以实现多协程之间的通信
 
-![](kotlin高级-协程-1751822155672.png)
+![](kotlin-协程-1751822155672.png)
 
 ### 基本操作
 

@@ -1,10 +1,11 @@
 ---
 title: Kotlin高级——泛型
-categories: [Kotlin, 高级篇]
+categories: [Kotlin]
 tags: [Kotlin, Android]
 date: 2024-03-10 20:25
-updated: 2025-07-07 01:26
+updated: 2025-07-09 17:32
 banner: /images/kotlin.jpg
+topic: kotlin
 ---
 ## 开始
 

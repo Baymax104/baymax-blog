@@ -6,11 +6,12 @@
 title: Baymax's Blog
 subtitle: "Talk is cheap. | Show me the code."
 avatar: /images/icon.svg
-description: '这里是Baymax小振的博客，一个热爱编程、探索科技世界的程序员的小天地。'
+favicon: /images/favicon.ico
+description: "这里是Baymax小振的博客，一个热爱编程、探索科技世界的程序员的小天地。"
 keywords:
 author: John Wei
 language: zh-CN
-timezone: 'Asia/Shanghai'
+timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
@@ -99,6 +100,13 @@ ignore:
 ## Themes: https://hexo.io/themes/
 theme: stellar
 
+plugins:
+  hexo-generator-feed
+
+feed:
+  type: atom
+  path: atom.xml
+  limit: 20
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
