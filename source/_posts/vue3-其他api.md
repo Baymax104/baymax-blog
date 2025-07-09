@@ -4,6 +4,7 @@ categories: [前端, Vue3]
 tags: [前端, Vue3]
 date: 2024-05-21 10:32
 updated: 2025-07-06 15:44
+banner: /images/vue3.jpeg
 ---
 ## shallowRef 与 shallowReactive
 

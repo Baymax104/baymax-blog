@@ -4,6 +4,7 @@ categories: [前端]
 tags: [TypeScript, 前端]
 date: 2024-04-14 23:18
 updated: 2025-07-07 00:35
+banner: /images/typescript.png
 ---
 ## 开始
 

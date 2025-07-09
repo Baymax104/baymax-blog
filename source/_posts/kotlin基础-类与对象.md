@@ -4,6 +4,7 @@ categories: [Kotlin, 基础篇]
 tags: [Kotlin, Android]
 date: 2024-03-09 19:33
 updated: 2025-07-07 01:27
+banner: /images/kotlin.jpg
 ---
 ## 开始
 

@@ -4,6 +4,7 @@ categories: [Rust]
 tags: [Rust]
 date: 2024-11-03 02:39
 updated: 2025-07-07 01:49
+banner: /images/rust.png
 ---
 ## 枚举
 

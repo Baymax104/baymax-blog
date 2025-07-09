@@ -4,6 +4,7 @@ categories: [前端, Vue3]
 tags: [前端, Vue3]
 date: 2024-05-19 10:32
 updated: 2025-07-06 15:41
+banner: /images/vue3.jpeg
 ---
 ## props 传参
 

@@ -1,9 +1,10 @@
 ---
 title: Kotlin高级——协程
-category: [Kotlin, 高级篇]
+categories: [Kotlin, 高级篇]
 tags: [Kotlin, Android]
 date: 2024-04-13 19:45
 updated: 2025-07-07 01:16
+banner: /images/kotlin.jpg
 ---
 ## 开始
 

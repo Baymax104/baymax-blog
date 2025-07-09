@@ -4,6 +4,7 @@ categories: [Python]
 tags: [Numpy, Python, 数据分析]
 date: 2024-05-29 18:39
 updated: 2025-07-07 01:57
+banner: /images/numpy.png
 ---
 ## ndarray 对象
 
