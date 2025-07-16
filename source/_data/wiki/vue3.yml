@@ -1,0 +1,29 @@
+name: Vue3学习笔记
+title: Vue3学习笔记
+icon: /images/vue3-logo.svg
+cover: /images/vue3-logo.svg
+coverpage: true
+tags: 知识库
+license: true
+share: true
+description: 易学易用，性能出色，适用场景丰富的 Web 前端框架。
+
+search:
+  filter: /wiki/vue3/
+  placeholder: 在笔记中搜索...
+
+base_dir: /wiki/vue3/
+tree:
+  - vue3-开始
+  - vue3-模板语法
+  - vue3-条件渲染与列表渲染
+  - vue3-事件
+  - vue3-组合式
+  - vue3-监视
+  - vue3-生命周期
+  - vue3-路由
+  - vue3-pinia
+  - vue3-组件通信
+  - vue3-slot
+  - vue3-其他api
+

@@ -1,0 +1,24 @@
+name: WPF学习笔记
+title: WPF学习笔记
+icon: /images/microsoft-logo.svg
+cover: /images/microsoft-logo.svg
+coverpage: true
+tags: 知识库
+license: true
+share: true
+description: >
+  Windows Presentation Foundation（WPF）是一个用户界面（UI）框架，用于创建桌面客户端应用程序。
+  WPF 开发平台支持一组广泛的应用程序开发功能，包括应用程序模型、资源、控件、图形、布局、数据绑定、文档和安全性。
+
+search:
+  filter: /wiki/wpf/
+  placeholder: 在笔记中搜索...
+
+base_dir: /wiki/wpf/
+tree:
+  - wpf-开始
+  - wpf-xaml语言
+  - wpf-控件
+  - wpf-binding
+  - wpf-依赖属性
+

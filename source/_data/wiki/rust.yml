@@ -1,0 +1,25 @@
+name: Rust学习笔记
+title: Rust学习笔记
+icon: /images/rust-logo.svg
+cover: /images/rust-logo.svg
+coverpage: true
+tags: 知识库
+license: true
+share: true
+description: Rust 是一门具有高性能、可靠性和生产力的程序设计语言，适用于各种领域的应用开发。
+
+search:
+  filter: /wiki/rust/
+  placeholder: 在笔记中搜索...
+
+base_dir: /wiki/rust/
+tree:
+  - rust-开始
+  - rust-所有权
+  - rust-结构体
+  - rust-枚举与模式匹配
+  - rust-模块化
+  - rust-错误处理
+  - rust-集合
+  - rust-泛型
+

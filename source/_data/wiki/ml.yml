@@ -1,0 +1,24 @@
+name: 《机器学习》笔记
+title: 《机器学习》笔记
+icon: /images/ml.jpg
+cover: /images/ml.jpg
+coverpage: true
+tags: 知识库
+license: true
+share: true
+description: 算法是“死”的，思想才是“活”的。……务须把握算法背后的思想脉络，无论创新科研还是应用实践，皆以此为登堂入室之始。
+
+search:
+  filter: /wiki/ml/
+  placeholder: 在笔记中搜索...
+
+base_dir: /wiki/ml/
+tree:
+  - ml-绪论
+  - ml-模型评估
+  - ml-线性模型
+  - ml-决策树
+  - ml-神经网络
+  - ml-贝叶斯
+  - ml-集成学习
+  - ml-聚类
