@@ -55,7 +55,7 @@ MLM：随机地掩盖输入的 token，目标是通过上下文预测被掩盖�
 - 预训练：在无监督数据上对不同的预训练任务进行训练
 - 微调：使用预训练的参数初始化模型，在有监督的数据上对不同的下游任务微调参数
 
-![](bert-1751821406217.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/bert%2Fbert-1751821406217.png)
 
 ---
 
@@ -83,7 +83,7 @@ WordPiece embeddings
 
 - 最终输入表示为 token embedding、segment embedding 和 position embedding 之和
 
-![](bert-1751821297887.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/bert%2Fbert-1751821297887.png)
 
 ### 预训练
 
@@ -130,7 +130,7 @@ Next Sentence Prediction（NSP）
 
 在输出层使用线性变换，损失函数使用标准分类损失 $\log softmax(CW^T)$
 
-![](bert-1751821313456.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/bert%2Fbert-1751821313456.png)
 
 ### SQuAD v1.1
 
@@ -151,15 +151,15 @@ $$
 
 选择分数最高的序列作为预测的答案序列
 
-![](bert-1751821326495.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/bert%2Fbert-1751821326495.png)
 
 ### SQuAD v2.0
 
-![](bert-1751821339418.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/bert%2Fbert-1751821339418.png)
 
 ### SWAG
 
-![](bert-1751821356603.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/bert%2Fbert-1751821356603.png)
 
 ### 消融实验
 
@@ -171,7 +171,7 @@ $$
 
 `LTR & No NSP + BiLSTM`：在 LTR 的基础上添加双向 LSTM 提取右侧信息
 
-![](bert-1751821364287.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/bert%2Fbert-1751821364287.png)
 
 #### 模型大小的影响
 
@@ -179,7 +179,7 @@ $$
 
 如果模型经过充分的预训练，扩展到极端大小的模型也会带来小规模任务的大幅改进
 
-![](bert-1751821376214.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/bert%2Fbert-1751821376214.png)
 
 #### BERT 基于特征的方法
 
@@ -187,7 +187,7 @@ $$
 
 在 CoNLL-2003 数据集上进行 NER 任务，在使用基于特征方法时，不微调 bert 参数，将一个或多个层的输出嵌入提取出来，将这些嵌入进行组合后输入到一个随机初始化的两层 BiLSTM 中，之后再进行分类
 
-![](bert-1751821386998.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/bert%2Fbert-1751821386998.png)
 
 ## 创新点
 

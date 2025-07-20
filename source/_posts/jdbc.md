@@ -11,7 +11,7 @@ JDBC 是 java 操作数据库的一组 API
 
 JDBC 只是 java 操作数据库的接口，具体的实现由数据库厂商实现各自的驱动
 
-![](jdbc-1751821966195.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/jdbc%2Fjdbc-1751821966195.png)
 
 ## 数据库连接
 

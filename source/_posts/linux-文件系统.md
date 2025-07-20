@@ -9,7 +9,7 @@ updated: 2025-07-07 00:57
 
 Linux 使用层次结构
 
-![](linux-文件系统-1751821023824.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/linux-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%2Flinux-%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F-1751821023824.png)
 
 Linux 根目录为/，常见的系统目录如下
 
