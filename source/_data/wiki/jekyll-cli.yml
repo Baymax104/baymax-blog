@@ -1,0 +1,18 @@
+name: Jekyll CLI
+title: Jekyll CLI
+icon: /images/jekyll-logo.svg
+cover: /images/jekyll-logo.svg
+coverpage: true
+tags: 开源项目
+license: true
+share: true
+description: >
+  Jekyll CLI是一个用于管理Jekyll博客的命令行工具，支持创建、删除、发布博文。
+
+search:
+  filter: /wiki/jekyll-cli/
+  placeholder: 在项目中搜索...
+
+base_dir: /wiki/jekyll-cli/
+tree:
+  - jekyll-cli

@@ -7,8 +7,7 @@ tags: 知识库
 license: true
 share: true
 description: >
-  Kotlin 是一门现代但已成熟的编程语言，旨在让开发人员更幸福快乐。
-  它简洁、安全、可与 Java 及其他语言互操作，并提供了多种方式在多个平台间复用代码，以实现高效编程。
+  Kotlin 是一门现代并已成熟的编程语言，它简洁、安全、可与 Java 及其他语言互操作，并提供了多种方式在多个平台间复用代码，以实现高效编程。
 
 search:
   filter: /wiki/kotlin/

@@ -8,7 +8,6 @@ license: true
 share: true
 description: >
   Android 是由 Google 主导开发的开源移动操作系统，基于 Linux 内核，广泛应用于智能手机、平板电脑及智能设备。
-  它提供丰富的应用生态，支持跨厂商定制，并持续通过系统更新优化性能与安全性，成为全球最主流的移动平台之一。
 
 search:
   filter: /wiki/android/
@@ -22,4 +21,5 @@ tree:
   - android-广播
   - android-数据存储与共享
   - android-service
+  - jetpack-compose
 
