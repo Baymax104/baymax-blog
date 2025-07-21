@@ -1,9 +1,10 @@
 ---
-title: 记录使用jekyll-compose的一个坑
+title: jekyll-compose编辑器问题
 categories: [开发相关]
-tags: [jekyll-compose, bug]
+tags: [Jekyll, jekyll-compose]
 date: 2024-05-24 14:51
-updated: 2025-07-07 01:05
+updated: 2025-07-21 20:24
+wiki: jekyll-cli
 ---
 ## 问题背景
 

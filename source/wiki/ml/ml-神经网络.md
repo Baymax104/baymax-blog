@@ -8,7 +8,7 @@ wiki: ml
 ---
 ## 神经元模型
 
-![](ml-神经网络-1751805550293.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/ml-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%2Fml-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-1751805550293.png)
 
 ## 感知机与多层网络
 
@@ -29,7 +29,7 @@ $$
 
 误差逆传播算法 (BP) 可用于训练多层前馈网络，也可训练递归神经网络
 
-![](ml-神经网络-1751805561322.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/ml-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C%2Fml-%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C-1751805561322.png)
 
 除上图标记外，第 j 个输出神经元的阈值为 $\theta_j$，第 h 个隐层神经元的阈值为 $\gamma_h$
 

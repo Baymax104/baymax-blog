@@ -15,7 +15,7 @@ Service 依赖于创建时所在的进程，当进程被杀死后，该进程的
 
 使用 Service 不会自动创建新的线程，若需要去实现一个耗时任务，创建新线程要注意避免 Service 运行在主线程引起的 ANR 问题（应用程序无响应）
 
-![](android-service-1751743460148.jpg)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/android-service%2Fandroid-service-1751743460148.jpg)
 
 ## 创建 Service
 

@@ -4,7 +4,8 @@ icon: /images/jekyll-logo.svg
 cover: /images/jekyll-logo.svg
 coverpage: true
 tags: 开源项目
-license: true
+license: >
+  本项目基于[MIT许可证](https://opensource.org/license/MIT)开源，可自由使用、修改和分发。
 share: true
 description: >
   Jekyll CLI是一个用于管理Jekyll博客的命令行工具，支持创建、删除、发布博文。
@@ -16,3 +17,5 @@ search:
 base_dir: /wiki/jekyll-cli/
 tree:
   - jekyll-cli
+  - jekyll-cli-1
+  - jekyll-cli-2

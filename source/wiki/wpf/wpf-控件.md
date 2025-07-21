@@ -10,7 +10,7 @@ wiki: wpf
 
 WPF 中的控件主要分为 6 类控件，分别是布局控件、内容控件、带标题内容控件、集合控件、带标题集合控件、特殊内容控件，这些控件类的继承关系如下
 
-![](wpf-控件-1751811427618.jpg)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/wpf-%E6%8E%A7%E4%BB%B6%2Fwpf-%E6%8E%A7%E4%BB%B6-1751811427618.jpg)
 
 - ContentControl：单一内容控件
 - HeaderedContentControl：带标题单一内容控件

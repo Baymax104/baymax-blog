@@ -13,7 +13,7 @@ wiki: vue3
 
 父模板中的插槽内容可以访问到父组件的数据作用域，但不能访问到子组件的数据作用域
 
-![](vue3-slot-1751769743326.png)
+![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/vue3-slot%2Fvue3-slot-1751769743326.png)
 
 ## 默认插槽
 
