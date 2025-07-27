@@ -1,9 +1,10 @@
 ---
-title: feapder基础
+title: feapder框架
 categories: [Python, 爬虫]
 tags: [feapder, Python, 爬虫]
 date: 2024-08-31 14:33
 updated: 2025-07-06 15:38
+wiki: spider
 ---
 ## 开始
 

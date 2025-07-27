@@ -1,0 +1,23 @@
+name: Python爬虫
+title: Python爬虫学习
+icon: /images/spider-logo.svg
+cover: /images/spider-logo.svg
+coverpage: true
+tags: 学习笔记
+license: true
+share: true
+description: >
+  Python爬虫是一种自动化程序，可高效抓取并解析互联网上的结构化信息，广泛应用于数据采集、市场分析和舆情监控等领域。
+
+search:
+  filter: /wiki/spider/
+  placeholder: 在笔记中搜索...
+
+base_dir: /wiki/spider/
+tree:
+  "基础库":
+    - requests
+    - xpath
+    - selenium
+  "框架":
+    - feapder
