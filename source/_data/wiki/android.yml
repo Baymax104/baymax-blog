@@ -1,9 +1,9 @@
-name: Android学习笔记
-title: Android学习笔记
+name: Android
+title: Android
 icon: /images/android-logo.svg
 cover: /images/android-logo.svg
 coverpage: true
-tags: 学习笔记
+tags: 框架学习
 license: true
 share: true
 description: >

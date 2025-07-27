@@ -1,9 +1,9 @@
-name: Rust学习笔记
-title: Rust学习笔记
+name: Rust
+title: Rust
 icon: /images/rust-logo.svg
 cover: /images/rust-logo.svg
 coverpage: true
-tags: 学习笔记
+tags: 编程语言
 license: true
 share: true
 description: Rust 是一门具有高性能、可靠性和生产力的程序设计语言，适用于各种领域的应用开发。

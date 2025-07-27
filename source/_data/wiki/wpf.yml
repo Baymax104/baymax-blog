@@ -1,9 +1,9 @@
-name: WPF学习笔记
-title: WPF学习笔记
+name: WPF
+title: WPF
 icon: /images/microsoft-logo.svg
 cover: /images/microsoft-logo.svg
 coverpage: true
-tags: 学习笔记
+tags: 框架学习
 license: true
 share: true
 description: >

@@ -1,9 +1,9 @@
-name: Kotlin学习笔记
-title: Kotlin学习笔记
+name: Kotlin
+title: Kotlin
 icon: /images/kotlin-logo.svg
 cover: /images/kotlin-logo.svg
 coverpage: true
-tags: 学习笔记
+tags: 编程语言
 license: true
 share: true
 description: >

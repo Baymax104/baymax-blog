@@ -1,10 +1,11 @@
 ---
-title: JavaScript异步编程
+title: Promise异步编程
 categories: [前端]
 tags: [JavaScript, 前端]
 date: 2024-04-13 19:19
 updated: 2025-07-07 01:16
 banner: /images/javascript.jpg
+wiki: javascript
 ---
 ## Promise
 

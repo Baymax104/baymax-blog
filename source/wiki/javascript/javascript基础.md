@@ -5,6 +5,7 @@ tags: [JavaScript, 前端]
 date: 2024-04-13 19:19
 updated: 2025-07-07 01:21
 banner: /images/javascript.jpg
+wiki: javascript
 ---
 ## 开始
 

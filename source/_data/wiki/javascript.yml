@@ -1,0 +1,20 @@
+name: JavaScript
+title: JavaScript
+icon: /images/javascript-logo.svg
+cover: /images/javascript-logo.svg
+coverpage: true
+tags: 编程语言
+license: true
+share: true
+description: >
+  JavaScript是一种广泛应用于网页开发的脚本语言，用于实现交互性、动态内容和前端逻辑。
+
+search:
+  filter: /wiki/javascript/
+  placeholder: 在笔记中搜索...
+
+base_dir: /wiki/javascript/
+tree:
+  - javascript基础
+  - javascript异步编程
+  - typescript基础
