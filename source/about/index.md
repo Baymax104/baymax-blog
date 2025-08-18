@@ -1,6 +1,5 @@
 ---
 title: 关于
-subtitle: hello
 date: 2025-07-21 02:17
 updated: 2025-07-28 00:43
 menu_id: about
