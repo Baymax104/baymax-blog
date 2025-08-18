@@ -1,0 +1,20 @@
+name: KeyVault
+title: KeyVault
+icon: /assets/logo/key-vault-logo.png
+cover: /assets/logo/key-vault-logo.png
+coverpage: true
+tags: 开源项目
+license: >
+  本项目基于[MIT许可证](https://opensource.org/license/MIT)开源，可自由使用、修改和分发。
+share: true
+description: >
+  KeyVault 是一款安全的密钥管理应用，帮助用户存储和管理各类敏感信息，如账号密码、授权令牌等，并支持标签分类、过期时间设置等功能。
+
+search:
+  filter: /wiki/key-vault/
+  placeholder: 在项目中搜索...
+
+base_dir: /wiki/key-vault/
+tree:
+  - key-vault
+  - key-vault-1
