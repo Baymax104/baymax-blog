@@ -1,6 +1,6 @@
 ---
 title: "A Survey of Graph Neural Networks for Recommender Systems: Challenges, Methods, and Directions"
-categories: [人工智能, 论文笔记]
+categories: [论文笔记]
 tags: [Recommender System, GNN]
 date: 2024-07-30 16:25
 updated: 2025-07-07 02:08

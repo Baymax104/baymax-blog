@@ -4,7 +4,7 @@ categories: [Android]
 tags: [Android, Jetpack Compose]
 date: 2024-04-14 15:12
 updated: 2025-07-07 01:11
-banner: /images/jetpack_compose.png
+banner: /assets/banner/jetpack_compose.png
 wiki: android
 ---
 ## 开始

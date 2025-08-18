@@ -1,7 +1,7 @@
 name: 《机器学习》笔记
 title: 《机器学习》笔记
-icon: /images/ml.jpg
-cover: /images/ml.jpg
+icon: /assets/logo/ml.jpg
+cover: /assets/logo/ml.jpg
 coverpage: true
 tags: 学习笔记
 license: true

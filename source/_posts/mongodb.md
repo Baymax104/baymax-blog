@@ -4,7 +4,7 @@ categories: [开发相关]
 tags: [MongoDB, 数据库, Database]
 date: 2024-05-26 15:39
 updated: 2025-07-07 01:44
-banner: /images/mongodb.jpg
+banner: /assets/banner/mongodb.jpg
 ---
 ## 开始
 

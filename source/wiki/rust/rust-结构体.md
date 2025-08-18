@@ -4,7 +4,7 @@ categories: [Rust]
 tags: [Rust]
 date: 2024-11-02 22:35
 updated: 2025-07-07 01:49
-banner: /images/rust.png
+banner: /assets/banner/rust.png
 wiki: rust
 ---
 ## 结构体定义

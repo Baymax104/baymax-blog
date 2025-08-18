@@ -349,7 +349,7 @@ public sealed class ByteArraySegment : IEnumerable<byte> {
 
 我们画个图来明确这些属性表示的部分
 
-![](sharppcap数据包解析原理-1751819998288.png)
+![](sharppcap-extract-1751819998288.png)
 
 可以看到 BytesLength 才是表示实际可以处理的数组长度，包括在构造器中也有体现，`BytesLength` 设置为 `bytesLength` 和 `bytes.Length` 的最小值。Offset 表示在数组中的一个偏移，Length 表示 Offset 之后的长度，数据包解析的首部和负载的划分就是归功于这两个属性，下面我们就来看看它是如何划分的
 
@@ -400,17 +400,17 @@ internal static PacketOrByteArraySegment ParseNextSegment(ByteArraySegment heade
 
 构造 `EthernetPacket` 时传入的 `ByteArraySegment` 中 `Bytes` 为整个数据包，`Length` 和 `BytesLength` 都等于 `Bytes.Length`，`Offset` 为 0，调用 `NextSegment()` 前设置 `Length = 14`（以太网首部长度为 14B)，如下图所示
 
-![](sharppcap数据包解析原理-1751820012345.png)
+![](sharppcap-extract-1751820012345.png)
 
 下面用画图来表示每一步中每个变量的位置
 
 1. `var startingOffset = Offset + Length;`
 
-     ![](sharppcap数据包解析原理-1751820034316.png)
+     ![](sharppcap-extract-1751820034316.png)
 
 2. `segmentLength = Math.Min(segmentLength, BytesLength - startingOffset);`
 
-     ![](sharppcap数据包解析原理-1751820054067.png)
+     ![](sharppcap-extract-1751820054067.png)
 
 3. `var bytesLength = startingOffset + segmentLength;`
 
@@ -418,7 +418,7 @@ internal static PacketOrByteArraySegment ParseNextSegment(ByteArraySegment heade
 
 4.   `new ByteArraySegment(Bytes, startingOffset, segmentLength, bytesLength);`
 
-     ![](sharppcap数据包解析原理-1751820065316.png)
+     ![](sharppcap-extract-1751820065316.png)
 
 从上面的步骤我们可以看出，对于不同的片段，Length 就是该片段的长度，例如对于首部，Length 就是首部的长度，对于负载，Length 就是负载的长度。那么 Offset 就起到一个索引的作用，Offset 就是该片段在数组中的起始索引
 
@@ -426,17 +426,17 @@ internal static PacketOrByteArraySegment ParseNextSegment(ByteArraySegment heade
 
 假设有下图所示的 `ByteArraySegment`
 
-![](sharppcap数据包解析原理-1751820081123.png)
+![](sharppcap-extract-1751820081123.png)
 
 1. 设置首部 Length
 
      Offset 就是该首部的起始索引
 
-     ![](sharppcap数据包解析原理-1751820089761.png)
+     ![](sharppcap-extract-1751820089761.png)
 
 2. 调用 `NextSegment()` 获取负载
 
-     ![](sharppcap数据包解析原理-1751820098152.png)
+     ![](sharppcap-extract-1751820098152.png)
 
 可以看到我们依然获得了符合要求的 `ByteArraySegment` 对象
 

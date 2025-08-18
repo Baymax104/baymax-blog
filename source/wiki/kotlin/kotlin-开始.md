@@ -4,7 +4,7 @@ categories: [Kotlin]
 tags: [Kotlin, Android]
 date: 2024-03-08 14:10
 updated: 2025-07-09 17:35
-banner: /images/kotlin.jpg
+banner: /assets/banner/kotlin.jpg
 wiki: kotlin
 ---
 ## 前言

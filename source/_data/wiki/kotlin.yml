@@ -1,7 +1,7 @@
 name: Kotlin
 title: Kotlin
-icon: /images/kotlin-logo.svg
-cover: /images/kotlin-logo.svg
+icon: /assets/logo/kotlin-logo.svg
+cover: /assets/logo/kotlin-logo.svg
 coverpage: true
 tags: 编程语言
 license: true

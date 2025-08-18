@@ -1,7 +1,7 @@
 name: Python爬虫
 title: Python爬虫学习
-icon: /images/spider-logo.svg
-cover: /images/spider-logo.svg
+icon: /assets/logo/spider-logo.svg
+cover: /assets/logo/spider-logo.svg
 coverpage: true
 tags: 学习笔记
 license: true

@@ -4,7 +4,7 @@ categories: [前端]
 tags: [JavaScript, 前端]
 date: 2024-04-13 19:19
 updated: 2025-07-07 01:16
-banner: /images/javascript.jpg
+banner: /assets/banner/javascript.jpg
 wiki: javascript
 ---
 ## Promise

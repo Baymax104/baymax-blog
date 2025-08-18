@@ -1,6 +1,6 @@
 ---
 title: "Tacotron: Towards End-to-End Speech Synthesis"
-categories: [人工智能, 论文笔记]
+categories: [论文笔记]
 tags: [Tacotron, TTS]
 date: 2024-07-30 21:55
 updated: 2025-07-07 00:34

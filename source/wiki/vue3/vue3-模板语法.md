@@ -4,7 +4,7 @@ categories: [前端, Vue3]
 tags: [前端, Vue3]
 date: 2024-04-25 12:32
 updated: 2025-07-06 15:44
-banner: /images/vue3.jpeg
+banner: /assets/banner/vue3.jpeg
 wiki: vue3
 ---
 ## 插值语法

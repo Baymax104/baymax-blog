@@ -1,5 +1,5 @@
 baymax:
-  name: "John Wei"
-  avatar: /images/icon.svg
-  banner: /images/author_banner.png
-  description: "Talk is cheap. Show me the code."
+  name: "Baymax小振"
+  avatar: /assets/logo/avatar.svg
+  banner: /assets/banner/author_banner.png
+  description: "Make it work, then make it better."

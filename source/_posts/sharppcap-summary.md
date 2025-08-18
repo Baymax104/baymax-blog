@@ -29,15 +29,15 @@ SharpPcap 已经发布在 NuGet 上，所以我们可以直接通过 Visual Stud
 
      打开项目的 NuGet 管理器，点击浏览，在搜索框搜索 SharpPcap，点击安装即可
 
-     ![](sharppcap学习总结-1751819795462.png)
+     ![](sharppcap-summary-1751819795462.png)
 
-     ![](sharppcap学习总结-1751819806952.png)
+     ![](sharppcap-summary-1751819806952.png)
 
 2.   **查看依赖项**
 
      安装完成后，我们可以看到项目中的依赖项已经有了 SharpPcap 的依赖，其中也包含一个叫 PacketDotNet 的库，SharpPcap 主要负责数据包的捕获，而 PacketDotNet 就是负责数据包的解析
 
-     ![](sharppcap学习总结-1751819820122.png)
+     ![](sharppcap-summary-1751819820122.png)
 
 3.   **在代码中使用 SharpPcap**
 
@@ -61,7 +61,7 @@ SharpPcap 已经发布在 NuGet 上，所以我们可以直接通过 Visual Stud
      }
      ```
 
-     ![](sharppcap学习总结-1751819832882.png)
+     ![](sharppcap-summary-1751819832882.png)
 
      可以打印出 Npcap 版本和 SharpPcap 版本，接下来就可以愉快的使用了:clap::clap::clap:
 

@@ -1,7 +1,7 @@
 name: Jekyll CLI
 title: Jekyll CLI
-icon: /images/jekyll-logo.svg
-cover: /images/jekyll-logo.svg
+icon: /assets/logo/jekyll-logo.svg
+cover: /assets/logo/jekyll-logo.svg
 coverpage: true
 tags: 开源项目
 license: >

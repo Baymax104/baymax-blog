@@ -1,7 +1,7 @@
 name: Rust
 title: Rust
-icon: /images/rust-logo.svg
-cover: /images/rust-logo.svg
+icon: /assets/logo/rust-logo.svg
+cover: /assets/logo/rust-logo.svg
 coverpage: true
 tags: 编程语言
 license: true

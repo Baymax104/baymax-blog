@@ -5,7 +5,7 @@ tags: [Android]
 date: 2024-04-16 13:03
 updated: 2025-07-06 15:37
 wiki: android
-banner: /images/android.jpg
+banner: /assets/banner/android.jpg
 ---
 ## 开始
 

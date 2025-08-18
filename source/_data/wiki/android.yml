@@ -1,7 +1,7 @@
 name: Android
 title: Android
-icon: /images/android-logo.svg
-cover: /images/android-logo.svg
+icon: /assets/logo/android-logo.svg
+cover: /assets/logo/android-logo.svg
 coverpage: true
 tags: 框架学习
 license: true

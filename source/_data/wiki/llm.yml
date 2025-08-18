@@ -1,7 +1,7 @@
 name: LLM学习笔记
 title: LLM学习笔记
-icon: /images/notes.svg
-cover: /images/notes.svg
+icon: /assets/logo/notes.svg
+cover: /assets/logo/notes.svg
 coverpage: true
 tags: 学习笔记
 license: true

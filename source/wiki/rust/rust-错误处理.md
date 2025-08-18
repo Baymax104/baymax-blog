@@ -4,7 +4,7 @@ categories: [Rust]
 tags: [Rust]
 date: 2024-11-04 16:50
 updated: 2025-07-07 01:47
-banner: /images/rust.png
+banner: /assets/banner/rust.png
 wiki: rust
 ---
 ## 开始

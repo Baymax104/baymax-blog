@@ -1,7 +1,7 @@
 name: Vue3
 title: Vue3
-icon: /images/vue3-logo.svg
-cover: /images/vue3-logo.svg
+icon: /assets/logo/vue3-logo.svg
+cover: /assets/logo/vue3-logo.svg
 coverpage: true
 tags: 框架学习
 license: true
