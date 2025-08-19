@@ -113,5 +113,5 @@ feed:
 # Vercel deployment is already used, no need to deploy by "hexo deploy" command
 deploy:
 #  type: git
-#  repo: https://github.com/Baymax104/baymax104.github.io
+#  repo: https://github.com/Baymax104/baymax-blog
 #  branch: [main]
