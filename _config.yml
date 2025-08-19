@@ -15,7 +15,7 @@ timezone: "Asia/Shanghai"
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
+url: https://baymaxam.top
 permalink: posts/:category/:title/
 permalink_defaults:
 pretty_urls:
@@ -110,5 +110,8 @@ feed:
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
+# Vercel deployment is already used, no need to deploy by "hexo deploy" command
 deploy:
-  type: ''
+#  type: git
+#  repo: https://github.com/Baymax104/baymax104.github.io
+#  branch: [main]
