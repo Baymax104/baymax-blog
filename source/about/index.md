@@ -4,8 +4,8 @@ date: 2025-07-21 02:17
 updated: 2025-07-28 00:43
 menu_id: about
 robots: index, nofollow
-leftbar: recent
-rightbar: ghuser, welcome
+leftbar: welcome, recent
+rightbar: ghuser, info-card
 banner: /assets/banner/author_banner.png
 banner_info:
   avatar: /assets/logo/avatar.svg
@@ -29,5 +29,5 @@ Hello, 我是Baymax小振
 
 {% quot 日常出没地点 %}
 
-- 专业摸鱼，业余写bug，star数真比头发少 👉 [Github](https://github.com/Baymax104)
+- 专业摸鱼，业余写bug 👉 [Github](https://github.com/Baymax104)
 - 日常网上冲浪，偶尔发点奇怪的东西 👉 [B站](https://space.bilibili.com/175196416)
