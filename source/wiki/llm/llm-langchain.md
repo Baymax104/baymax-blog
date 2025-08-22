@@ -52,7 +52,7 @@ langchain 中定义了 `Runnable` 协议，许多组件（如模板、LLM、解�
 
 `Runnable` 类是 langchain 链的核心类，langchain 核心类图如下
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/llm-langchain%2Fllm-langchain-1751820603704.webp)
+![](https://cos.baymaxam.top/blog/llm-langchain/llm-langchain-1751820603704.webp)
 
 `Runnable` 类部分定义如下
 
@@ -391,7 +391,7 @@ text_splitter = RecursiveCharacterTextSplitter(
 
 消息存储通过 `BaseChatMessageHistory` 类实现，langchain 内置了多种类型的实现类，如 SQL、Redis 等
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/llm-langchain%2Fllm-langchain-1751820679390.png)
+![](https://cos.baymaxam.top/blog/llm-langchain/llm-langchain-1751820679390.png)
 
 构造 `RunnableWithMessageHistory` 需要以下参数
 

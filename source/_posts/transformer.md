@@ -48,7 +48,7 @@ Transformer 使用 encoder-decoder 架构，encoder 将输入的完整符号序�
 
 模型是自回归的，不断使用之前产生的输出作为输入来生成下一个输出
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/transformer%2Ftransformer-1751819275555.png)
+![](https://cos.baymaxam.top/blog/transformer/transformer-1751819275555.png)
 
 ### Encoder
 
@@ -75,11 +75,11 @@ Decoder 由 N（N=6）层相同的层组成，每一层包含三个子层
 
 假设一个二维矩阵 $A\in\mathbb{R}^{batch\times feature}$，BatchNorm 就是在每个 feature 上进行标准化，消除了不同特征之间的差异，LayerNorm 则是在每个 batch 上进行标准化，消除了不同样本之间的差异
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/transformer%2Ftransformer-1751819298952.png)
+![](https://cos.baymaxam.top/blog/transformer/transformer-1751819298952.png)
 
 拓展到三维，图示如下
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/transformer%2Ftransformer-1751819311888.png)
+![](https://cos.baymaxam.top/blog/transformer/transformer-1751819311888.png)
 
 对于 NLP 任务，输入形状通常为 (batch, length, feature)，同时每个句子都有不同的长度，通过 padding 填充到相同长度。此时如果使用 BatchNorm，就消除了特征之间的差异，即上下文之间的差异，不符合 NLP 任务的特点，使用 LayerNorm 可以消除不同句子之间的差异性，保持了上下文的差异
 
@@ -91,7 +91,7 @@ Attention 使用三个向量 query、key、value，它的输出是 value 的加�
 
 query 和 key 的特征维度大小为 $d_k$，value 的特征维度大小为 $d_v$，将所有的 key 与 query 做点积（Dot-Product），除以 $\sqrt{d_k}$ 进行缩放，之后进行 softmax 得到注意力权重，将权重与 value 进行加权求和得到输出
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/transformer%2Ftransformer-1751819325733.png)
+![](https://cos.baymaxam.top/blog/transformer/transformer-1751819325733.png)
 
 将 N 个 query 组成矩阵 $Q\in\mathbb{R}^{N\times d_k}$，所有的 key 组成矩阵 $K\in\mathbb{R}^{M\times d_k}$，所有的 value 组成矩阵 $V\in\mathbb{R}^{M\times d_v}$，有
 
@@ -114,7 +114,7 @@ $$
 
 多头自注意力可以考虑到不同位置上的不同的表示子空间的信息，同时由于多头的注意力计算是并行的，因此总的计算成本与单头注意力加一个线性层的总成本相似
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/transformer%2Ftransformer-1751819344481.png)
+![](https://cos.baymaxam.top/blog/transformer/transformer-1751819344481.png)
 
 设 Q、K、V 的线性层权重分别为 $W^Q\in\mathbb{R}^{d_{model}\times d_k}$，$W^K\in\mathbb{R}^{d_{model}\times d_k}$，$W^V\in\mathbb{R}^{d_{model}\times d_v}$，最终线性层的权重为 $W^O\in\mathbb{R}^{hd_v\times d_{model}}$，有
 
@@ -178,7 +178,7 @@ $$
 - 计算并行度：通过串行操作的数量来衡量
 - 网络中长依赖关系的路径长度：通过任意两个输入和输出位置之间的最大路径长度来衡量
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/transformer%2Ftransformer-1751819368481.png)
+![](https://cos.baymaxam.top/blog/transformer/transformer-1751819368481.png)
 
 - 在并行度上，Self-Attention 的串行操作数量恒定，而 RNN 的串行操作数量为 $O(n)$，这一点上 Self-Attention 相比 RNN 更快
 
@@ -210,11 +210,11 @@ $$
 
 ### 实验结果
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/transformer%2Ftransformer-1751819387593.png)
+![](https://cos.baymaxam.top/blog/transformer/transformer-1751819387593.png)
 
 ### 模型超参数
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/transformer%2Ftransformer-1751819397953.png)
+![](https://cos.baymaxam.top/blog/transformer/transformer-1751819397953.png)
 
 - A 行比较不同的自注意力头的个数、$d_k$、$d_v$，自注意力头的个数过多和过少都会降低性能
 

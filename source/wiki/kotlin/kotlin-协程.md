@@ -478,7 +478,7 @@ flow.cancellable()
 
 Channel 是一个并发安全的队列，可以实现多协程之间的通信
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/kotlin-%E5%8D%8F%E7%A8%8B%2Fkotlin-%E5%8D%8F%E7%A8%8B-1751822155672.png)
+![](https://cos.baymaxam.top/blog/kotlin-%E5%8D%8F%E7%A8%8B/kotlin-%E5%8D%8F%E7%A8%8B-1751822155672.png)
 
 ### 基本操作
 

@@ -10,7 +10,7 @@ wiki: ml
 
 集成学习将多个个体学习器的学习结果通过某种策略结合起来，每个个体学习器可以使用相同的学习算法，称为基学习器，也可以使用不同的学习算法
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0%2Fml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0-1751805155647.png)
+![](https://cos.baymaxam.top/blog/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0-1751805155647.png)
 
 集成学习通常针对弱学习器进行，个体学习器应该有一定的**准确性和多样性**，相互之间应该尽可能独立，这是集成学习研究的核心
 
@@ -25,7 +25,7 @@ Boosting 是一类可将弱学习器提升到强学习器的算法，基本流�
 
 Boosting 算法中最著名的是 AdaBoost 算法
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0%2Fml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0-1751805195872.png)
+![](https://cos.baymaxam.top/blog/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0-1751805195872.png)
 
 Boosting 算法要求基学习器能对特定的数据分布进行学习，这可通过**重赋权法**实施，即在训练过程的每一轮中，根据样本分布为每个训练样本重新赋予一个权重
 
@@ -35,7 +35,7 @@ Boosting 算法要求基学习器能对特定的数据分布进行学习，这�
 
 Bagging 基于自主采样法，对训练集进行 m 次有放回随机采样，产生一个采样集，采样出 T 个采样集，基于这些采样集训练出 T 个基学习器，再将基学习器进行结合，对于分类任务，通常使用简单投票法结合，对于回归任务，通常使用简单平均法结合
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0%2Fml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0-1751805215406.png)
+![](https://cos.baymaxam.top/blog/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0-1751805215406.png)
 
 ## 随机森林
 
@@ -75,7 +75,7 @@ Stacking 算法先从初始训练集中训练出初始学习器，然后将所�
 
 当初级学习器输出为类概率，次级学习器使用多响应线性回归（MLR）时，效果较好
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0%2Fml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0-1751805234138.png)
+![](https://cos.baymaxam.top/blog/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0-1751805234138.png)
 
 ## 多样性
 
@@ -97,7 +97,7 @@ $$
 
 设共有 m 个样本，构造两个分类器预测结果的列联表
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0%2Fml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0-1751805246726.png)
+![](https://cos.baymaxam.top/blog/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0/ml-%E9%9B%86%E6%88%90%E5%AD%A6%E4%B9%A0-1751805246726.png)
 
 - 不合度量：$dis_{ij}=\frac{b+c}{m}$，值越大，多样性越大
 

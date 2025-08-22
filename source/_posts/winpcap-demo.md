@@ -79,7 +79,7 @@ pcap_if_t 结构体是 pcap_if 的 typedef，相关类型定义如下
 
 上述结构的关系如下图所示，一个接口可以拥有多个网络地址，都是以链表形式连接
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/winpcap-demo%2Fwinpcap-demo-1751811920462.png)
+![](https://cos.baymaxam.top/blog/winpcap-demo/winpcap-demo-1751811920462.png)
 
 ## Demo2：获取接口高级信息
 
@@ -446,7 +446,7 @@ pcap_setmode：设置接口为统计模式
 
     `*((LONGLONG*)(pkt_data + 8))` 获取 AcceptedBytes 数值
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/winpcap-demo%2Fwinpcap-demo-1751811901971.png)
+![](https://cos.baymaxam.top/blog/winpcap-demo/winpcap-demo-1751811901971.png)
 
 ---
 

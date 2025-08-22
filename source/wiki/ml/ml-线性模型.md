@@ -110,7 +110,7 @@ $$
 
 sigmoid 函数将 $(-\infty,+\infty)$ 映射到 $(0,1)$ 之间
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/ml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B%2Fml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B-1751805742758.png)
+![](https://cos.baymaxam.top/blog/ml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/ml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B-1751805742758.png)
 
 代入线性函数有
 
@@ -136,7 +136,7 @@ $$
 
 在二分类问题上，线性判别分析（LDA）通过将样本投影到一条直线上，同时使得相同类别的样本的投影点尽可能接近，而不同类别的样本的投影点尽可能远离，确定直线后，将新样本投影到该直线上，根据投影点的位置判定类别
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/ml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B%2Fml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B-1751805755657.png)
+![](https://cos.baymaxam.top/blog/ml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/ml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B-1751805755657.png)
 
 LDA 的目标是使同类样本的投影点尽可能接近，则可以使同类样本投影点的协方差尽可能小，使不同的样本的投影点尽可能远离，则可以使类中心的距离尽可能大，用 $\mu_0$ 和 $\mu_1$ 表示两类样本的均值向量，$\Sigma_0$ 和 $\Sigma_1$ 表示两类样本的协方差矩阵，有最大化目标函数
 
@@ -159,7 +159,7 @@ ECOC 分为两步
 
 ECOC 常见的有二元码和三元码，类别和类别划分组成编码矩阵，其中 1 表示正类，-1 表示负类
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/ml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B%2Fml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B-1751805768086.png)
+![](https://cos.baymaxam.top/blog/ml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B/ml-%E7%BA%BF%E6%80%A7%E6%A8%A1%E5%9E%8B-1751805768086.png)
 
 a 图中分类器 f1 的预测结果为 $(-1,+1,-1,-1)$，f2 的预测结果为 $(+1,-1,+1,-1)$，f3 的预测结果为 $(-1,-1,+1,+1)$，f4 的预测结果为 $(+1,+1,-1,+1)$，f5 的预测结果为 $(+1,-1,+1,-1)$，对于 C1 类别组成了一个编码 $(-1,+1,-1,+1,+1)$，使用该编码与测试样本的编码进行比较
 

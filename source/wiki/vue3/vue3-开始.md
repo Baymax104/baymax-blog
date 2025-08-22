@@ -13,7 +13,7 @@ wiki: vue3
 
 项目目录结构
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/vue3-%E5%BC%80%E5%A7%8B%2Fvue3-%E5%BC%80%E5%A7%8B-1751769659145.png)
+![](https://cos.baymaxam.top/blog/vue3-%E5%BC%80%E5%A7%8B/vue3-%E5%BC%80%E5%A7%8B-1751769659145.png)
 
 - public：存放项目公共资源
 - src：源代码目录

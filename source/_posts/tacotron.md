@@ -77,18 +77,18 @@ Char2Wav
 
 ### 模型架构
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/tacotron%2Ftacotron-1751819512804.png)
+![](https://cos.baymaxam.top/blog/tacotron/tacotron-1751819512804.png)
 
 - 分为 Encoder、基于 Attention 的 Decoder 和后处理网络
 - 接收字符作为输入，输出 spectrogram frames，之后可将 spectrogram 转换为 waveform
 
 模型超参数
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/tacotron%2Ftacotron-1751819523359.png)
+![](https://cos.baymaxam.top/blog/tacotron/tacotron-1751819523359.png)
 
 ### CBHG 模块
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/tacotron%2Ftacotron-1751819534451.png)
+![](https://cos.baymaxam.top/blog/tacotron/tacotron-1751819534451.png)
 
 CBHG 模块组成
 
@@ -160,7 +160,7 @@ Postnet 模块是为了将 seq2seq 目标转换为 waveform 目标，模型中�
 
 Encoder 和 Decoder 均使用 2 层残差 RNN，其中每层有 256 个 GRU 单元，没有使用 pre-net 或 post-net，decoder 直接预测 linear-scale log magnitude spectrogram，该模型需要预定采样 (采样率 0.5) 来学习 alignment 和泛化
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/tacotron%2Ftacotron-1751819583515.png)
+![](https://cos.baymaxam.top/blog/tacotron/tacotron-1751819583515.png)
 
 在向前移动之前，注意力往往会停留在许多帧上，这会导致合成信号中的语音可理解度很差
 
@@ -168,7 +168,7 @@ Encoder 和 Decoder 均使用 2 层残差 RNN，其中每层有 256 个 GRU 单�
 
 使用两层残差 GRU 替换 CBHG
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/tacotron%2Ftacotron-1751819593736.png)
+![](https://cos.baymaxam.top/blog/tacotron/tacotron-1751819593736.png)
 
 GRU 编码器产生的 alignment 是嘈杂的，这些嘈杂的 alignment 导致了错误发音
 
@@ -176,7 +176,7 @@ GRU 编码器产生的 alignment 是嘈杂的，这些嘈杂的 alignment 导致
 
 不使用 post-net 和使用 post-net 对比
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/tacotron%2Ftacotron-1751819617760.png)
+![](https://cos.baymaxam.top/blog/tacotron/tacotron-1751819617760.png)
 
 从后处理网络得到的预测包含了更好的可分辨谐波和高频共振峰结构，减少了合成伪影
 
@@ -184,7 +184,7 @@ GRU 编码器产生的 alignment 是嘈杂的，这些嘈杂的 alignment 导致
 
 受试者被要求对模拟的自然程度进行 5 点李克特量表评分，使用 100 个未见过的短语用于测试，每个短语获得 8 个评分，将 Tacotron 与 parametric 模型和 concatenative 系统对比
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/tacotron%2Ftacotron-1751819643119.png)
+![](https://cos.baymaxam.top/blog/tacotron/tacotron-1751819643119.png)
 
 ## 创新点
 

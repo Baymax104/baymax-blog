@@ -244,13 +244,13 @@ try {
 
 Android 应用通过 ContentProvider 来实现应用间共享数据
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/android-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%85%B1%E4%BA%AB%2Fandroid-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%85%B1%E4%BA%AB-1751743373028.png)
+![](https://cos.baymaxam.top/blog/android-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%85%B1%E4%BA%AB/android-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%85%B1%E4%BA%AB-1751743373028.png)
 
 ### URI
 
 URI 为统一资源标识符，主要由 scheme、authority 和 path 组成，使用 ContentProvider 时，authority 通常为 `packagename.provider`
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/android-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%85%B1%E4%BA%AB%2Fandroid-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%85%B1%E4%BA%AB-1751743379932.png)
+![](http://cos.baymaxam.top/blog/android-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%85%B1%E4%BA%AB/android-%E6%95%B0%E6%8D%AE%E5%AD%98%E5%82%A8%E4%B8%8E%E5%85%B1%E4%BA%AB-1751743379932.png)
 
 Android 常用的 scheme
 

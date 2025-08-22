@@ -27,7 +27,7 @@ Compose 设计原则
 
     单一数据源决定了数据流的的单向流动，数据总是自上而下流动，事件总是自下而上传递
 
-    ![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/jetpack-compose%2Fjetpack-compose-1751821659870.png)
+    ![](https://cos.baymaxam.top/blog/jetpack-compose/jetpack-compose-1751821659870.png)
 
 Compose 与 View 的关系：Compose 树中的视图节点是 LayoutNode，Compose 树可以通过一个挂载点挂载到 View 树中，挂载点通过 AbstractComposeView 实现，AbstractComposeView 有三个子类，分别用于适配 Activity、Dialog 和 PopupWindow，它的子节点 AndroidComposeView 持有 Compose 树，同时它也是一个 ViewGroup，实现了 Compose 树和 View 树的连接
 
@@ -91,7 +91,7 @@ class CombinedModifier(
 
 outer 指向当前修饰符的前一个 Modifier 对象，inner 指向当前修饰符的 Modifier 对象
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/jetpack-compose%2Fjetpack-compose-1751821705932.png)
+![](https://cos.baymaxam.top/blog/jetpack-compose/jetpack-compose-1751821705932.png)
 
 Compose 在绘制 UI 时，会遍历 Modifier 链，使用 foldIn 和 foldOut 函数进行遍历
 
@@ -110,7 +110,7 @@ fun <R> foldOut(initial: R, operation: (Element, R) -> R): R
 
 - Text：基于 Material Design 规范设计，使用 BasicText 则脱离 Material Design 规范
 
-    ![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/jetpack-compose%2Fjetpack-compose-1751821724900.png)
+    ![](https://cos.baymaxam.top/blog/jetpack-compose/jetpack-compose-1751821724900.png)
 
     > 关于资源：Compose 提供了获取不同类型资源的函数
     > 
@@ -137,7 +137,7 @@ fun <R> foldOut(initial: R, operation: (Element, R) -> R): R
 
     两种风格：filled(无边框填充)，Outlined(有边框无填充)
 
-    ![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/jetpack-compose%2Fjetpack-compose-1751821912296.png)
+    ![](https://cos.baymaxam.top/blog/jetpack-compose/jetpack-compose-1751821912296.png)
 
 #### 图像组件
 
@@ -191,7 +191,7 @@ Compose 只有三种布局，Row、Column、Box
 
 子组件对齐：布局内的组件可以通过 `Modifier.align` 设置自己的对齐，Column 中只能设置子组件水平对齐，Row 中只能设置子组件垂直对齐
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/jetpack-compose%2Fjetpack-compose-1751821779468.gif)
+![](https://cos.baymaxam.top/blog/jetpack-compose/jetpack-compose-1751821779468.gif)
 
 - Column：垂直线性布局
 - Row：水平线性布局
@@ -241,7 +241,7 @@ items 还可接收 List 参数，调用 itemsIndexed 可同时获取索引
 
 Material Design 颜色字段
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/jetpack-compose%2Fjetpack-compose-1751821814421.png)
+![](https://cos.baymaxam.top/blog/jetpack-compose/jetpack-compose-1751821814421.png)
 
 ### CompositionLocal
 
@@ -351,7 +351,7 @@ ViewModel 方式可以支持 Hilt 依赖注入，适用于长期的业务逻辑
 
 #### 状态分层策略
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/jetpack-compose%2Fjetpack-compose-1751821894352.png)
+![](https://cos.baymaxam.top/blog/jetpack-compose/jetpack-compose-1751821894352.png)
 
 ### 状态重组
 

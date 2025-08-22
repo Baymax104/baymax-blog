@@ -40,7 +40,7 @@ GNN-based recommender system 挑战
 
 经典推荐系统的四个方面
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751824673337.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751824673337.png)
 
 推荐系统的三个历史阶段
 
@@ -105,7 +105,7 @@ GNN 遇到的挑战
 
 一般的推荐系统使用多阶段的架构，将 item 从 item pool 中一个阶段一个阶段地过滤
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751824720555.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751824720555.png)
 
 一般有三个阶段，分别是 Matching、Ranking、Re-ranking
 
@@ -215,7 +215,7 @@ GNN 遇到的挑战
 
 ### GNN
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751824771215.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751824771215.png)
 
 #### 图结构
 
@@ -253,7 +253,7 @@ GNN主要操作：按照结构连接在图上传播嵌入，包括聚合邻域�
 
 经典GNN
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751824811053.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751824811053.png)
 
 - GCN：典型的谱模型，它结合了图卷积和神经网络来实现半监督分类的图任务。具体来说，GCN将卷积中的滤波器用一阶近似
 
@@ -306,7 +306,7 @@ $$
     1. 从顶点到连接它们的超边传播
     2. 从超边传播到它们相遇的顶点
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751824869574.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751824869574.png)
 
 卷积或嵌入传播操作通常会执行多次，当小于 4 次时，GNN 会出现过平滑问题，即当传播层数变大时，被更新的嵌入会出现小幅波动
 
@@ -412,15 +412,15 @@ $$
 
 根据 Stage 分类
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751824909049.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751824909049.png)
 
 根据 Scenario 分类
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751824919554.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751824919554.png)
 
 根据 Objective 分类
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751824931656.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751824931656.png)
 
 ### Stage
 
@@ -428,7 +428,7 @@ $$
 
 在 Matching 阶段基于 GNN 的模型可以看作是嵌入匹配，通常在 user-item 二部图上设计专门的 GNN 架构
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751824949065.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751824949065.png)
 
 - GCMC：通过求和传递邻域信息，为不同的关系边分配权重共享的转换通道
 - NGCF：相比 MF 和 NCF 取得了更优性能
@@ -447,7 +447,7 @@ $$
 - 设计特殊的图结构来捕获 encoder 中所需的特征交互
 - 在 predictor 中可以考虑特征交互，通过集成来自 encoder 的不同特征嵌入来估计排名分数
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751824957687.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751824957687.png)
 
 - Fi-GNN：构建了一个加权的全连接图，使用 GAT 和 GRU 作为 encoder，使用注意力网络实现 predictor
 - PUP：研究了价格特征对 Ranking 的影响并提出了一种名为价格感知用户偏好建模的模型，在预定义的异构图上使用 GCN 作为 encoder，使用两分支 FM 作为 predictor
@@ -475,7 +475,7 @@ IRGPR：提出了一个异构图来融合两个信息源、一个 item 关系图
 - 如何捕获社交因素
 - 如何将来自朋友的社交因素和来自互动行为的用户偏好结合起来
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751824987011.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751824987011.png)
 
 目前的工作从两个角度来捕获社交因素
 
@@ -503,7 +503,7 @@ IRGPR：提出了一个异构图来融合两个信息源、一个 item 关系图
     - MHCN 使用 GCN 在超图上传播来获取高阶社交关系
     - GraphRec 和 DiffNet++ 假设来自社交图上不同邻居的社交影响是不同的，并对来自不同朋友的社交影响赋予不同的权重
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825011189.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825011189.png)
 
 在社交推荐中，从两个不同的角度学习用户表示，即社交影响和用户交互，为了从这两种角度结合用户表示，有两种策略
 
@@ -519,9 +519,9 @@ IRGPR：提出了一个异构图来融合两个信息源、一个 item 关系图
 
 对于序列推荐，为了提高推荐性能，需要从序列中提取尽可能多的有效信息，并学习序列中用户的兴趣，包括短期兴趣、长期兴趣、动态兴趣等，准确预测用户可能感兴趣的下一个 item
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825021434.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825021434.png)
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825039969.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825039969.png)
 
 - SURGE：将每个用户的序列转换成 item-item 图，并通过度量学习学习每条边的权重，通过 dynamic graph pooling 保留更强的边，通过位置展开将保留的图转换成一个序列，使用该序列预测下一个 item
 - MA-GNN：考虑序列中的短期兴趣，构建一个 item-item 图，图中 item 只与在序列中与它相近的 item 建立边，最后将学习到的表示融合起来用于最终推荐
@@ -543,9 +543,9 @@ IRGPR：提出了一个异构图来融合两个信息源、一个 item 关系图
 
 item 转移可以被建模为图，在图上的信息传播可以激活用户的实际兴趣
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825070373.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825070373.png)
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825090714.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825090714.png)
 
 - 图结构
 
@@ -597,9 +597,9 @@ item 转移可以被建模为图，在图上的信息传播可以激活用户的
 - 利用稀疏的 user-bundle 交互学习 bundle 表示
 - 高阶关系
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825133765.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825133765.png)
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825145159.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825145159.png)
 
 - BGCN：提出了基于 GNN 的模型，该模型将两个部分的交互和捆绑 item 的从属关系统一到一个图中，那么该 item 就可以作为 user-bundle 和 bundle-bundle 之间进行嵌入传播的桥梁。同时，进一步提出了一种用于寻找难负样本的采样方式用于训练
 - DPR：提出用辅助数据初始化图，并将交互关系表示为标量权重和向量，提出了 GNN 层来获取药物包的嵌入
@@ -611,9 +611,9 @@ item 转移可以被建模为图，在图上的信息传播可以激活用户的
 
 跨域推荐面临的挑战包括如何构建图和设计网络架构来跨域传递信息
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825161769.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825161769.png)
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825174654.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825174654.png)
 
 - PPGN：使用在不同域之间共享的用户和 item 来构建跨域图，在多任务学习框架下，模型可以很好地学习到在多个域的 item 上用户的偏好
 - BiTGCF：提出了以共享用户为桥梁的双向知识转移。采用 GNN 层来利用 user-item 交互图中的高阶连通性来更好地进行偏好学习，然后将公共特征与特定领域特征进行融合
@@ -630,9 +630,9 @@ item 转移可以被建模为图，在图上的信息传播可以激活用户的
 - 如何构建多种行为与目标行为的关系
 - 如何通过行为构建 item 的语义
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825192841.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825192841.png)
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825204898.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825204898.png)
 
 - MGNN：在一个图中构建了所有的用户行为并进行图卷积操作
 - MGNN-SPred、LP-MRGNN：从图中提取每个行为作为子图，在子图中学习，最后通过门控机制进行聚合
@@ -654,7 +654,7 @@ item 转移可以被建模为图，在图上的信息传播可以激活用户的
 - 弱偏好信号：通过从原始的 user-item 二部图中构建多样化的子图来限制主导主题的重要性
 - 准确性和多样性的平衡
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825233643.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825233643.png)
 
 - BGCF：通过对高阶邻居进行顶点复制，构建了扩充图，具有高相似度的多样化主题的 item 可以直接连接到用户顶点。根据 item 流行度对排名靠前的 item 进行重新排序
 - DGCN：进行了重新平衡的邻居采样，这样降低了优势主题的权重，增强了弱势主题在邻居顶点中的重要性。在 item 嵌入上使用对抗学习，使 GNN 捕获与 item 类别无关的用户偏好
@@ -664,9 +664,9 @@ item 转移可以被建模为图，在图上的信息传播可以激活用户的
 
 #### Explainability
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825260792.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825260792.png)
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825272414.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825272414.png)
 
 - TriRank：构建一个包含三种顶点的异构图，顶点包含用户、item 和 aspect（从文本评论中提取的特定 item 属性），从而将推荐任务转换为三元关系排序任务，通过显式得构建评论中的 aspect，模型具有高可解释性
 - ECFKG：使用 user 和 item 作为实体，用户交互行为作为关系，建立知识图谱，它们嵌入每个用于推荐的实体，并采用知识图谱中用户和 item 之间的最短关系路径来表示推荐解释
@@ -685,9 +685,9 @@ item 转移可以被建模为图，在图上的信息传播可以激活用户的
 
 过去的研究已经证明，与只采用节点属性的模型相比，由于使用了图结构，用户的不公平性被放大了
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825291927.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825291927.png)
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/recommender-gnn-survey%2Frecommender-gnn-survey-1751825303401.png)
+![](https://cos.baymaxam.top/blog/recommender-gnn-survey/recommender-gnn-survey-1751825303401.png)
 
 - Fairwalk：扩展了图嵌入方法 node2vec，它可以根据下一个顶点的敏感属性进行采样来生成更加多样化的网络邻域表示，用于社交推荐，因此，所有节点的敏感属性都是不可或缺的
 - CFCGE：提出了一个对抗架构来最小化图嵌入中的敏感信息，使用 discriminator 来施加公平限制，公平限制可以根据任务来变化

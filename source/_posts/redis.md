@@ -137,7 +137,7 @@ GEO 用于存储地理位置信息，一个坐标点用 (经度, 纬度, 名称)
 
 Stream 用于消息队列，使用 redis 的发布订阅模式可以实现简单的消息队列功能，但缺点是消息无法持久化，Stream 提供了消息的持久化和主从复制功能
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/redis%2Fredis-1751824502034.png)
+![](https://cos.baymaxam.top/blog/redis/redis-1751824502034.png)
 
 - Message Content：消息内容，每个消息都有一个唯一 ID 和对应的消息内容
 - Consumer Group：消费组，一个消费组中包含多个消费者 Consumer

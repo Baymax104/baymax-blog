@@ -38,7 +38,7 @@ PDF 文档内容可分为**文本**、**图片**、**表格**三种元素
 
 ## 总体方案
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/pdf-extract%2Fpdf-extract-1755429903742.png)
+![](https://cos.baymaxam.top/blog/pdf-extract/pdf-extract-1755429903742.png)
 
 总体方案主要分为两部分
 
@@ -93,7 +93,7 @@ PDF 文档内容可分为**文本**、**图片**、**表格**三种元素
 
 span 识别区域示例如下
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/pdf-extract%2Fpdf-extract-1755429993573.png)
+![](https://cos.baymaxam.top/blog/pdf-extract/pdf-extract-1755429993573.png)
 
 ### 原生解析
 
@@ -251,7 +251,7 @@ sequenceDiagram
         
     - 对于子章节数量不固定，但每个子章节具有相似结构的情况，使用列表
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/pdf-extract%2Fpdf-extract-1755430130835.png)
+![](https://cos.baymaxam.top755430130835.png)
 
 ### 叶子节点
 
@@ -290,7 +290,7 @@ sequenceDiagram
 
 对于非兄弟节点，可以将节点解析需要的参数提升到它的父节点的解析参数中，直到参数可以由兄弟节点提供
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/pdf-extract%2Fpdf-extract-1755430173414.png)
+![](https://cos.baymaxam.top/blog/pdf-extract/pdf-extract-1755430173414.png)
 
 ## 技术栈
 

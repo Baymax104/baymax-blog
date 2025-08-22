@@ -107,7 +107,7 @@ wiki: llm
 - 在 prompt 中添加长度限制以控制生成内容的长度，生成内容长度并不严格等于限制长度
 - 检查是否捕捉到正确的细节，逐步优化 prompt，使语言模型生成的文本更加符合预期的样式和内容要求
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/llm-prompt%2Fllm-prompt-1751820874702.png)
+![](https://cos.baymaxam.top/blog/llm-prompt/llm-prompt-1751820874702.png)
 
 ## LLM 功能
 

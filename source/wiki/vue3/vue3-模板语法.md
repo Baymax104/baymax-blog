@@ -33,7 +33,7 @@ vue 中的指令以 `v-` 开头，支持 HTML 元素属性的绑定，使用指�
 
 Vue 指令的完整结构由名称、参数、修饰符和值组成
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/vue3-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95%2Fvue3-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95-1751769709111.png)
+![](https://cos.baymaxam.top/blog/vue3-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95/vue3-%E6%A8%A1%E6%9D%BF%E8%AF%AD%E6%B3%95-1751769709111.png)
 
 - Name：Vue 指令以 `v-` 开头
 

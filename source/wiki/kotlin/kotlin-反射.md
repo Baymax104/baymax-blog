@@ -24,7 +24,7 @@ Kotlin 中可以直接使用 java 的反射，目前 java 反射的性能还是�
 
 kotlin 反射与 java 反射的类结构组成
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/kotlin-%E5%8F%8D%E5%B0%84%2Fkotlin-%E5%8F%8D%E5%B0%84-1751822808903.png)
+![](https://cos.baymaxam.top/blog/kotlin-%E5%8F%8D%E5%B0%84/kotlin-%E5%8F%8D%E5%B0%84-1751822808903.png)
 
 ## 类引用
 

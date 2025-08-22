@@ -492,7 +492,7 @@ Trait 对象的动态分发通过虚表（vtable）机制实现，**Trait 对象
 
 下图展示了 `Box<T>` 和 `Box<dyn Trait>` 的区别，`Box<T>` 只有一个指向堆内存中的数据的指针 ptr，`Box<dyn Trait>` 中的 ptr（data 指针）指向堆内存中的实际类型数据，vptr（vtable 指针）指向编译器为 T 类型生成的 Trait 虚表
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/rust-%E6%B3%9B%E5%9E%8B%2Frust-%E6%B3%9B%E5%9E%8B-1751823947311.png)
+![](https://cos.baymaxam.top/blog/rust-%E6%B3%9B%E5%9E%8B/rust-%E6%B3%9B%E5%9E%8B-1751823947311.png)
 
 **虚表的基本布局**
 

@@ -12,7 +12,7 @@ WPF 是 Windows 平台的 UI 框架，使用 C#和 xaml 语言编写，xaml 语�
 
 使用 Visual Studio 创建 WPF 应用程序，生成如下文件
 
-![](https://baymaxam-1309988842.cos.ap-beijing.myqcloud.com/blog/wpf-%E5%BC%80%E5%A7%8B%2Fwpf-%E5%BC%80%E5%A7%8B-1751810565740.png)
+![](https://cos.baymaxam.top/blog/wpf-%E5%BC%80%E5%A7%8B/wpf-%E5%BC%80%E5%A7%8B-1751810565740.png)
 
 - 依赖项中 `NETCore.App` 是.NET 平台应用程序的依赖，`WindowDeskTop.App.WPF` 是 WPF 框架的依赖
 
