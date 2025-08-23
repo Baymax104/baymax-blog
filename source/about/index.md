@@ -4,8 +4,8 @@ date: 2025-07-21 02:17
 updated: 2025-07-28 00:43
 menu_id: about
 robots: index, nofollow
-leftbar: welcome, recent
-rightbar: ghuser, info-card
+leftbar: welcome, info-card, recent
+rightbar: ghuser, memos
 banner: /assets/banner/author_banner.png
 banner_info:
   avatar: /assets/logo/avatar.svg
