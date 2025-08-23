@@ -15,11 +15,11 @@ search:
 
 base_dir: /wiki/android/
 tree:
-  - android-开始
+  - android-start
   - android-ui
   - android-activity
-  - android-广播
-  - android-数据存储与共享
+  - android-broadcast
+  - android-storage
   - android-service
   - jetpack-compose
 

@@ -7,7 +7,7 @@ tags: 框架学习
 license: true
 share: true
 description: >
-  Windows Presentation Foundation（WPF）是一个用户界面（UI）框架，用于创建桌面客户端应用程序。
+  Windows Presentation Foundation（WPF）是一个用户界面框架，用于创建桌面客户端应用程序。
 
 search:
   filter: /wiki/wpf/
@@ -16,7 +16,7 @@ search:
 base_dir: /wiki/wpf/
 tree:
   - wpf-开始
-  - wpf-xaml语言
+  - wpf-xaml
   - wpf-控件
   - wpf-binding
   - wpf-依赖属性
