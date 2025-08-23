@@ -17,7 +17,7 @@ search:
 
 base_dir: /wiki/llm/
 tree:
-  - llm-提示词
-  - llm-llm系统
+  - llm-prompt
+  - llm-system
   - llm-langchain
 

@@ -69,7 +69,7 @@ xml 的样式表语言为 XSLT，也可使用 css 设置样式
 
 使用 Android Studio 创建 Android 工程得到如下项目结构
 
-![](http://cos.baymaxam.top/blog/android-%E5%BC%80%E5%A7%8B/android-%E5%BC%80%E5%A7%8B-1751743097897.png)
+![](https://cos.baymaxam.top/blog/android-start/android-start-1751743097897.png)
 
 编程时主要使用 java 和 res 两个文件夹
 - java: 业务代码存放的地方
@@ -116,7 +116,7 @@ xml 的样式表语言为 XSLT，也可使用 css 设置样式
     }
     ```
 
-    ![](https://cos.baymaxam.top/blog/android-%E5%BC%80%E5%A7%8B/android-%E5%BC%80%E5%A7%8B-1751743187460.jpg)
+    ![](https://cos.baymaxam.top/blog/android-start/android-start-1751743187460.jpg)
 
 - `activity_main.xml`：`MainActivity.java` 对应的布局文件
 
@@ -135,7 +135,7 @@ xml 的样式表语言为 XSLT，也可使用 css 设置样式
     </LinearLayout>
     ```
 
-    ![](https://cos.baymaxam.top/blog/android-%E5%BC%80%E5%A7%8B/android-%E5%BC%80%E5%A7%8B-1751743206639.jpg)
+    ![](https://cos.baymaxam.top/blog/android-start/android-start-1751743206639.jpg)
 
 - `AndroidManifest.xml`：Android 项目的主配置文件，可配置应用所用的 Activity、Service、Broadcast 和 ContentProvider，以及声明权限
 
@@ -163,4 +163,4 @@ xml 的样式表语言为 XSLT，也可使用 css 设置样式
     </manifest>
     ```
 
-    ![](https://cos.baymaxam.top/blog/android-%E5%BC%80%E5%A7%8B/android-%E5%BC%80%E5%A7%8B-1751743255452.jpg)
+    ![](https://cos.baymaxam.top/blog/android-start/android-start-1751743255452.jpg)

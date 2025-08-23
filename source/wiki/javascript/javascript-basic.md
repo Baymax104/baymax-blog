@@ -701,7 +701,7 @@ class Dog extends Animal {
 
 每个函数、对象都自动存在一个原型对象，隐含的 prototype 属性指向原型对象，而原型对象中的 constructor 属性指向该函数对象
 
-![](javascript基础-1751822372793.png)
+![](javascript-basic-1751822372793.png)
 
 当函数以**构造函数**的形式调用时 (类实例化)，该构造函数创建的对象中会包含一个隐含属性\_\_proto\_\_，该属性指向原型对象
 
@@ -749,17 +749,17 @@ console.log(p instanceof Person.prototype) // error
 
 构造函数与对象的原型关系
 
-![](javascript基础-1751822383858.png)
+![](javascript-basic-1751822383858.png)
 
 两种构造方法的原型链
 
 经典方法 (对应类实例化)：真正的创建了 Person 构造函数，生成了 Person 的原型对象
 
-![](javascript基础-1751822391948.png)
+![](javascript-basic-1751822391948.png)
 
 极简方法或字面量方法：本质上 person 是个 Object 对象，没有创建新的原型对象
 
-![](javascript基础-1751822399666.png)
+![](javascript-basic-1751822399666.png)
 
 原型继承：js 继承通过原型链实现，子类的原型对象就是父类的实例对象
 
@@ -798,9 +798,9 @@ console.log(p instanceof Person.prototype) // error
 创建 Date 对象自动以当前时间创建
 
 ```javascript
-Date date = new Date();
+const date = new Date();
 // 传入指定时间字符串创建，格式:mm/dd/yyyy hh:MM:ss
-Date date = new Date("10/5/2022 16:17:00");
+const date = new Date("10/5/2022 16:17:00");
 ```
 
 方法

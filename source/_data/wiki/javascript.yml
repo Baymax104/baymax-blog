@@ -15,6 +15,6 @@ search:
 
 base_dir: /wiki/javascript/
 tree:
-  - javascript基础
-  - javascript异步编程
-  - typescript基础
+  - javascript-basic
+  - javascript-promise
+  - typescript-basic

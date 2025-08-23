@@ -58,35 +58,35 @@ PDF 文档内容可分为**文本**、**图片**、**表格**三种元素
 
 `middle.json` 中包含排版解析的结果，大致结构如下
 
-```json
+```json5
 {  
-  // 每个元素是每一页PDF的识别结果  
-  "pdf_info": [  
-    {  
-      // 一页中包含若干个由MinerU识别出来的内容块（block），例如文本段落、表格、图片  
-      "para_blocks": [  
-        {  
-          "type": "text",  
-          // 对于文本段落，block中包含多个行  
-          "lines": [  
-            {  
-              // 一行中包含多个片段（span），span是MinerU排版解析的最小单位  
-              "spans": [  
-                {  
-                  // 当前span的识别区域坐标(x0, y0, x1, y1)  
-                  // (x0, y0)为左上角坐标  
-                  // (x1, y1)为右下角坐标  
-                  "bbox": [],  
-                  "content": "",  
-                  "type": "text",  
-                  "score": 1.0  
-                }  
-              ]  
-            }  
-          ]  
-        }  
-      ]  
-    }  
+  // 每个元素是每一页PDF的识别结果  
+  "pdf_info": [  
+    {  
+    // 一页中包含若干个由MinerU识别出来的内容块（block），例如文本段落、表格、图片  
+      "para_blocks": [  
+        {  
+          "type": "text",  
+          // 对于文本段落，block中包含多个行  
+          "lines": [  
+            {
+              // 一行中包含多个片段（span），span是MinerU排版解析的最小单位  
+              "spans": [  
+                {
+                  // 当前span的识别区域坐标(x0, y0, x1, y1)  
+                  // (x0, y0)为左上角坐标  
+                  // (x1, y1)为右下角坐标  
+                  "bbox": [],  
+                  "content": "",  
+                  "type": "text",  
+                  "score": 1.0  
+                }  
+              ]  
+            }  
+          ]  
+        }
+      ]
+    }  
   ]  
 }
 ```
@@ -106,11 +106,11 @@ import pdfplumber
 ​  
 pdf_path = "..."  
 with pdfplumber.open(pdf_path) as pdf:  
-    page0 = pdf.pages[0]  
-    bbox = (x0, y0, x1, y1)  # PDF区域坐标  
-    page = page.within_bbox(bbox)  
-    text: str = page.extract_text()  # 提取文本  
-    table: list[list[str | None]] = page.extract_table()  # 提取表格
+    page0 = pdf.pages[0]  
+    bbox = (x0, y0, x1, y1)  # PDF区域坐标  
+    page = page.within_bbox(bbox)  
+    text: str = page.extract_text()  # 提取文本  
+    table: list[list[str | None]] = page.extract_table()  # 提取表格
 ```
 
 ### 混合解析
@@ -151,11 +151,11 @@ with pdfplumber.open(pdf_path) as pdf:
 
         ```python
         def __lt__(self, other):
-            x0, y0 = self.bbox[0], self.bbox[1]
-            other_x0, other_y0 = other.bbox[0], other.bbox[1]
-            if self.page != other.page:
-                return self.page < other.page
-            return (y0, x0) < (other_y0, other_x0)
+            x0, y0 = self.bbox[0], self.bbox[1]
+            other_x0, other_y0 = other.bbox[0], other.bbox[1]
+            if self.page != other.page:
+                return self.page < other.page
+            return (y0, x0) < (other_y0, other_x0)
         ```
 
 ## 文档结构化
@@ -174,12 +174,12 @@ with pdfplumber.open(pdf_path) as pdf:
 
 ```python
 class Node(ABC, BaseModel, Generic[Result]):  
-    name: str  
-    spans: list[Span]  # 节点中包含的span子集，每个子集都是不相交的  
-​  
-    @abstractmethod  
-    def extract(self, *args, **kwargs) -> Result:  
-        ...
+    name: str  
+    spans: list[Span]  # 节点中包含的span子集，每个子集都是不相交的  
+  
+    @abstractmethod  
+    def extract(self, *args, **kwargs) -> Result:  
+        ...
 ```
 
 节点中分为分支节点和叶子结点
@@ -222,17 +222,17 @@ sequenceDiagram
 
     ```
     split_keys = 预定义该章节中可能出现的子标题  
-     ​  
+      
     分割结果 = []  
     for span in 当前节点的span集合 do  
-        if 当前span与split_keys中某个值匹配 do  
-            next_span = 下一个在split_keys中匹配的span  
-            span子集合 = [当前span...next_span]  
-            将span子集合添加到分割结果中  
-        end  
-    end  
-    ​  
-    return 分割结果
+        if 当前span与split_keys中某个值匹配 do  
+            next_span = 下一个在split_keys中匹配的span
+            span子集合 = [当前span...next_span]  
+            将span子集合添加到分割结果中  
+        end  
+   end  
+     
+   return 分割结果
     ```
 
 2. 子节点处理：将每个小集合分派给不同的子节点进行处理
@@ -251,7 +251,7 @@ sequenceDiagram
         
     - 对于子章节数量不固定，但每个子章节具有相似结构的情况，使用列表
 
-![](https://cos.baymaxam.top755430130835.png)
+![](https://cos.baymaxam.top/blog/pdf-extract/pdf-extract-1755430130835.png)
 
 ### 叶子节点
 
@@ -269,9 +269,9 @@ sequenceDiagram
 
 依赖 pdfplumber 的提取效果，正常情况下（不考虑多行单元格跨页的情况），若表格中包含多行单元格，则提取出的二维数组中就存在 None，例如以下形式，直接填充 None 的位置即可
 
-```json
+```python
 [  
-  ["row1", "row1", "row1"],  # 第一行第二列为多行单元格，覆盖第一行到第三行  
+  ["row1", "row1", "row1"], # 第一行第二列为多行单元格，覆盖第一行到第三行  
   ["row2", None, "row2"],  
   ["row3", None, "row3"],  
   ["row4", "row4", "row4"]  

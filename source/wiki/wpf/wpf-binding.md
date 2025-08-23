@@ -356,7 +356,7 @@ MultiBinding 组合多个 Binding 的 Source，绑定到一个 Target
 
 MultiBinding 支持 Binding 的基本属性，如 `StringFormat`、`Mode`、`Converter` 等
 
-![](https://cos.baymaxam.top/blog/wpf-binding/f-binding-1751811231636.png)
+![](https://cos.baymaxam.top/blog/wpf-binding/wpf-binding-1751811231636.png)
 
 组合字符串的基本使用，xaml 标签扩展
 

@@ -144,7 +144,7 @@ e.g
 
 在 `main` 目录中包含 `lib1` 和 `lib2` 两个目录，在 `lib2` 中包含 `lib3` 目录，`lib1` 和 `lib2` 引用 `lib3`，`lib2` 引用 `lib1`，`main` 引用 `lib2`
 
-![](https://cos.baymaxam.top/blog/cmake/ake-1751821140583.png)
+![](https://cos.baymaxam.top/blog/cmake/cmake-1751821140583.png)
 
 ``` cmake
 # main/CMakeLists.txt

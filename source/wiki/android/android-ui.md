@@ -65,7 +65,7 @@ Android 中的组件都是由 View 和 ViewGroup 组成，是一个树形结构�
     - `layout_alignParentTop`: 顶部对齐
     - `layout_alignParentBottom`: 底部对齐
 
-    ![](https://cos.baymaxam.top/blog/android-ui%E6%8E%A7%E4%BB%B6/android-ui%E6%8E%A7%E4%BB%B6-1751743617412.jpg)
+    ![](https://cos.baymaxam.top/blog/android-ui/android-ui-1751743617412.jpg)
 
 - 根据兄弟组件 (处于同一布局的组件) 定位，指定组件 ID 来定位
 

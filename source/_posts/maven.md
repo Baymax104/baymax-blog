@@ -25,7 +25,7 @@ Maven 仓库分为三类
 
 Maven 的工作机制如下图所示
 
-![](https://cos.baymaxam.top/blog/maven/ven-1751820930600.png)
+![](https://cos.baymaxam.top/blog/maven/maven-1751820930600.png)
 
 - Maven 项目结构
 
