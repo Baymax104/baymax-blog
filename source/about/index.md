@@ -32,6 +32,19 @@ Hello, 我是Baymax小振
 - 专业摸鱼，业余写bug 👉 [Github](https://github.com/Baymax104)
 - 日常网上冲浪，偶尔发点奇怪的东西 👉 [B站](https://space.bilibili.com/175196416)
 
-{% quot 常用编程语言 %}
+{% quot 日常摸鱼记录 %}
 
-<figure><embed src="https://wakatime.com/share/@Baymax104/88a66efd-1d93-4e73-92e7-fef41de6ba79.svg"></embed></figure>
+{% tabs active:1 align:center %}
+
+<!-- tab 划水时长 -->
+<figure>
+<embed src="https://wakatime.com/share/@Baymax104/389481de-c6db-42eb-8c8e-c707594b8cb8.svg" width="600">
+</figure>
+
+
+<!-- tab 乱编语言 -->
+<figure>
+<embed src="https://wakatime.com/share/@Baymax104/c58d0b8c-ad61-4d1f-89bd-7665d019189c.svg" width="600">
+</figure>
+
+{% endtabs %}
