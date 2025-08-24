@@ -101,12 +101,25 @@ ignore:
 theme: stellar
 
 plugins:
-  hexo-generator-feed
+  - hexo-generator-feed
+  - hexo-robots
 
 feed:
   type: atom
   path: atom.xml
   limit: 20
+
+robots:
+  user_agent: "*"
+  allow:
+    - /
+  disallow:
+    - /js/
+    - /css/
+    - /images/
+  sitemaps:
+    - https://baymaxam.top/sitemap.xml
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

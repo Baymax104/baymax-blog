@@ -1454,6 +1454,11 @@ hexo-renderer-stylus@^3.0.1:
     nib "^1.2.0"
     stylus "^0.62.0"
 
+hexo-robots@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.npmmirror.com/hexo-robots/-/hexo-robots-1.0.1.tgz#83a4f5ac70b9fb7291716c0aa9b112208f40428b"
+  integrity sha512-efxv+h8zQSHtM3dCjyciop2kgq4FcSQQjtrN6qvtiD6nlydVGXf9wRSYg2n7X3Cggci1Udqqyhcv6Af2VBYdXQ==
+
 hexo-server@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npmjs.org/hexo-server/-/hexo-server-3.0.0.tgz#fcc597b29b72ee1f035824c5ebd3d92f7e1adb1c"
