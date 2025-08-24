@@ -117,6 +117,8 @@ robots:
     - /js/
     - /css/
     - /images/
+    - /archives/
+    - /tags/
   sitemaps:
     - https://baymaxam.top/sitemap.xml
 
