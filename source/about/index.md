@@ -31,3 +31,7 @@ Hello, 我是Baymax小振
 
 - 专业摸鱼，业余写bug 👉 [Github](https://github.com/Baymax104)
 - 日常网上冲浪，偶尔发点奇怪的东西 👉 [B站](https://space.bilibili.com/175196416)
+
+{% quot 常用编程语言 %}
+
+<figure><embed src="https://wakatime.com/share/@Baymax104/88a66efd-1d93-4e73-92e7-fef41de6ba79.svg"></embed></figure>
