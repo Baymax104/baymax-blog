@@ -4,7 +4,7 @@ categories: [人工智能, 大模型]
 tags: [LLM, 大模型, 大模型开发]
 date: 2025-03-04 23:35
 updated: 2025-07-07 00:53
-wiki: llm
+topic: llm
 ---
 ## 语言模型
 

@@ -4,6 +4,7 @@ categories: [论文笔记]
 tags: [Transformer, Attention, Self-Attention]
 date: 2024-08-12 01:30
 updated: 2025-07-07 00:30
+topic: paper
 ---
 
 | 基本信息                                                     |

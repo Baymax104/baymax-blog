@@ -4,7 +4,7 @@ categories: [人工智能, 大模型]
 tags: [LLM, 大模型, 大模型开发]
 date: 2025-03-04 15:05
 updated: 2025-07-07 00:53
-wiki: llm
+topic: llm
 ---
 ## 提示词设计原则
 

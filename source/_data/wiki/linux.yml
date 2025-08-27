@@ -1,9 +1,9 @@
-name: Linux学习笔记
-title: Linux学习笔记
+name: Linux学习
+title: Linux
 icon: /assets/logo/linux-logo.svg
 cover: /assets/logo/linux-logo.svg
 coverpage: true
-tags: 学习笔记
+tags: 技术体系
 license: true
 share: true
 description: >

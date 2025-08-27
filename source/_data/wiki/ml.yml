@@ -1,12 +1,12 @@
-name: 《机器学习》笔记
-title: 《机器学习》笔记
+name: 《机器学习》
+title: 《机器学习》
 icon: /assets/logo/ml.jpg
 cover: /assets/logo/ml.jpg
 coverpage: true
-tags: 学习笔记
+tags: 技术体系
 license: true
 share: true
-description: 算法是“死”的，思想才是“活”的。……务须把握算法背后的思想脉络，无论创新科研还是应用实践，皆以此为登堂入室之始。
+description: 算法是“死”的，思想才是“活”的。
 
 search:
   filter: /wiki/ml/

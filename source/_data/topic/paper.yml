@@ -1,0 +1,9 @@
+name: 论文阅读
+title: 论文阅读
+description: 论文阅读记录
+order_by: -date
+icon: /assets/logo/paper-logo.svg
+
+search:
+  filter: /topic/paper/
+  placeholder: 在专栏中搜索...

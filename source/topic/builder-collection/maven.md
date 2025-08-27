@@ -1,10 +1,11 @@
 ---
-title: Maven基础
+title: Maven
 categories: [开发相关]
 tags: [Maven, 构建工具]
 date: 2024-10-30 00:00
 updated: 2025-07-07 00:56
 banner: /assets/banner/maven.jpg
+topic: builder-collection
 ---
 ## 开始
 
