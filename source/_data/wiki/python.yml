@@ -1,0 +1,25 @@
+name: Python
+title: Python
+icon: /assets/logo/python-logo.svg
+cover: /assets/logo/python-logo.svg
+coverpage: true
+tags: 编程语言
+license: true
+share: true
+description: >
+  Python是语法简洁、功能强大、支持多范式的高级编程语言，广泛用于Web、数据、AI等领域。
+
+search:
+  filter: /wiki/python/
+  placeholder: 在笔记中搜索...
+
+base_dir: /wiki/python/
+tree:
+  - python-basic
+  - python-collection
+  - python-function
+  - python-oop
+  - python-file-operation
+  - python-exception
+  - python-context-manager
+
