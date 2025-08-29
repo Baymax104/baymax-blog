@@ -14,6 +14,10 @@
   url: https://baike.baidu.com/item/%E9%99%88%E5%A5%95%E8%BF%85/128029
   cover: /assets/image/eason-profile.jpg
 
+- title: 张杰
+  url: https://baike.baidu.com/item/%E5%BC%A0%E6%9D%B0/256
+  cover: /assets/image/zhangjie-profile.jpg
+
 - title: Imagine Dragons
   url: https://baike.baidu.com/item/Imagine%20Dragons
   cover: /assets/image/imagine-dragons-profile.jpg
@@ -25,4 +29,3 @@
 - title: Mariah Carey
   url: https://baike.baidu.com/item/%E7%8E%9B%E4%B8%BD%E4%BA%9A%C2%B7%E5%87%AF%E8%8E%89/674468
   cover: /assets/image/mariah-carey-profile.jpg
-
