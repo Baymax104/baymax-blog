@@ -7,7 +7,6 @@ wiki:
   - ml
   - jekyll-cli
   - javascript
-  - linux
   - key-vault
   - python
 
@@ -16,3 +15,4 @@ topic:
   - builder-collection
   - paper
   - spider
+  - site-build
