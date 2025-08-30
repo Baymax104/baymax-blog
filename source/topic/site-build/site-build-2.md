@@ -6,6 +6,7 @@ date: 2025-08-30 00:01
 updated: 2025-08-30 01:13
 topic: site-build
 ---
+
 主题的自定义逻辑全部放在主题目录中，博客目录只存放文章
 
 ## 底部文字居中
@@ -116,7 +117,11 @@ el += '</article>';
 
 ## 添加加载条
 
-使用 [pace](https://github.com/CodeByZach/pace) 库实现加载条，将样式文件放在 `_custom` 目录中，在 `main.styl` 中引入
+使用 [pace](https://github.com/CodeByZach/pace) 库实现加载条
+
+脚本引入可参考 [探索个性化配置](https://xaoxuu.com/wiki/stellar/advanced-settings/#%E5%A4%96%E9%83%A8%E6%96%87%E4%BB%B6%E6%B3%A8%E5%85%A5)，在配置文件的 `inject` 属性中引入
+
+样式文件放在 `_custom` 目录中，在 `main.styl` 中引入
 
 ```stylus
 @import '_custom/pace-theme-flash'
