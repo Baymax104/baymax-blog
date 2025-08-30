@@ -1,6 +1,6 @@
 ---
 title: CMake
-categories: [Cpp]
+categories: [开发相关]
 tags: [CMake, Cpp]
 date: 2024-10-28 23:55
 updated: 2025-07-07 01:00
