@@ -22,4 +22,5 @@ tree:
   - rust-错误处理
   - rust-集合
   - rust-泛型
+  - rust-生命周期
 
