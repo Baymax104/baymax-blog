@@ -177,7 +177,7 @@ pub trait Summary {
 }
 ```
 
-为类型实现 Trait
+为类型实现 Trait，只有当 Trait 和类型至少有一方位于本地 crate 时，才能实现 Trait
 
 ```rust
 pub struct NewsArticle
@@ -199,6 +199,36 @@ pub trait Summary {
     fn summarize(&self) -> String {
         String::from("(Read more...)")
     }
+}
+```
+
+**newtype 模式**
+
+newtype 模式用于为外部类型实现外部 Trait，例如 `Vec<T>` 类型没有实现 `Display` 特征，而二者都是从外部引入的，要为 `Vec<T>` 实现 `Display` 特征就需要使用 newtype 模式
+
+具体步骤如下
+
+1. 为外部类型定义一个元组结构体
+2. 为元组结构体实现 Trait
+
+示例如下
+
+```rust
+use std::fmt;
+
+// 为Vec<String>定义元组结构体
+struct Wrapper(Vec<String>);
+
+// 为元组结构体实现Trait
+impl fmt::Display for Wrapper {
+    fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
+        write!(f, "[{}]", self.0.join(", "))
+    }
+}
+
+fn main() {
+    let w = Wrapper(vec![String::from("hello"), String::from("world")]);
+    println!("w = {w}");
 }
 ```
 
