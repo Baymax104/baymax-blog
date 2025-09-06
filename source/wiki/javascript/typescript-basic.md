@@ -134,6 +134,15 @@ function func(a: number, b: number): number {
     ```ts
     let arr: number[] = [1, 2, 3, 4];
     let arr1: Array<number> = [1, 2, 3, 4];
+    
+    let objArray: { id: string, name: string }[] = [
+      {id: 0, name: "A"},
+      {id: 1, name: "B"}
+    ];
+    let objArray1: Array<{ id: string, name: string }> = [
+      {id: 0, name: "A"},
+      {id: 1, name: "B"}
+    ];
     ```
 
 - tuple：看做固定长度数组

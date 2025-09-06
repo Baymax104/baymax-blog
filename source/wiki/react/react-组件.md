@@ -121,7 +121,7 @@ export default function App() {
 使用 `if` 语句选择性地返回 tsx，返回 `null` 或 `undefined` 表示不渲染
 
 ```tsx
-function Item({ name, isPacked }) {
+function Item({name, isPacked}: { name: string, isPacked: boolean }) {
   if (isPacked) {
     return <li className="item">{name} ✅</li>;
   }
@@ -134,7 +134,7 @@ function Item({ name, isPacked }) {
 - 三目运算符 `?:`
 
     ```tsx
-    function Item({ name, isPacked }) {
+    function Item({name, isPacked}: { name: string, isPacked: boolean }) {
       return (
         <li className="item">
           {isPacked ? (
@@ -150,7 +150,7 @@ function Item({ name, isPacked }) {
 - 逻辑与运算符 `&&`：`condition && tsx`，仅当 `condition` 为 true 时渲染
 
     ```tsx
-    function Item({ name, isPacked }) {
+    function Item({name, isPacked}: { name: string, isPacked: boolean }) {
       return (
         <li className="item">
           {name} {isPacked && '✅'}
@@ -162,7 +162,7 @@ function Item({ name, isPacked }) {
 可混合以上方式，灵活地进行条件渲染
 
 ```tsx
-function Item({ name, isPacked }) {
+function Item({name, isPacked}: { name: string, isPacked: boolean }) {
   let itemContent = name;
   if (isPacked) {
     itemContent = (
@@ -220,4 +220,76 @@ const listItems = people.map(person => (
     <p>{person.bio}</p>  
   </Fragment> 
 ));
+```
+
+## 事件处理
+
+react 中执行事件处理通过事件处理函数来实现，事件处理函数通常以 `handle` 开头，后跟事件名
+
+通过 props，将事件处理函数作为参数传入 `<button>` 等标签的事件属性中，如 `onClick`
+
+```tsx
+function Info({handleClick}: { handleClick: () => void }) {
+  return (
+    <button onClick={handleClick}>info</button>
+  )
+}
+
+export default function App() {
+
+  return (
+    <Info handleClick={() => alert("info")}/>
+  )
+}
+```
+
+### 事件传播
+
+DOM 中的事件传播分为以下阶段
+
+1. 捕获阶段：事件从 window 对象开始，沿 DOM 树向下传播
+2. 目标阶段：事件到达目标元素，执行事件处理逻辑
+3. 冒泡阶段：事件沿 DOM 树向上传播，直到 window 对象
+
+react 中的事件传播也经历了以上过程，在不同阶段执行以下事件处理函数
+
+- 捕获阶段：调用向下传播路径中元素的 `onClickCapture` 函数
+- 目标阶段：调用目标元素的 `onClick` 函数
+- 冒泡阶段：调用向上传播路径中元素的 `onClick` 函数
+
+**阻止传播**
+
+事件处理函数可以接收一个 `event` 事件对象，使用该对象来控制事件的行为
+
+通过调用事件对象的 `stopPropagation` 函数，可以阻止事件向上冒泡
+
+```tsx
+function Button({onClick}: { onClick: () => void }) {
+  return (
+    <button onClick={e => {
+      e.stopPropagation();
+      onClick();
+    }}>
+      Click
+    </button>
+  );
+}
+```
+
+**阻止默认行为**
+
+调用事件对象的 `preventDefault` 函数，阻止元素的默认行为
+
+```tsx
+export default function Signup() {
+  return (
+    <form onSubmit={e => {
+      e.preventDefault();
+      alert('提交表单！');
+    }}>
+      <input />
+      <button>发送</button>
+    </form>
+  );
+}
 ```
