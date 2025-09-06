@@ -16,7 +16,6 @@ base_dir: /wiki/vue3/
 tree:
   - vue3-开始
   - vue3-模板语法
-  - vue3-条件渲染与列表渲染
   - vue3-事件
   - vue3-组合式
   - vue3-监视
