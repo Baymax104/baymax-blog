@@ -3,7 +3,7 @@ title: 组件
 categories: [前端, React]
 tags: [前端, React]
 date: 2025-09-06 01:09
-updated: 2025-09-06 01:09
+updated: 2025-09-06 00:48
 wiki: react
 ---
 ## 函数式组件
@@ -214,6 +214,8 @@ export default function App() {
 当列表项 tsx 中包含多个标签时，同样使用 Fragment 包裹，但不能使用空标签 `<>`，因为空标签不能指定属性
 
 ```tsx
+import { Fragment } from 'react';
+
 const listItems = people.map(person => (
   <Fragment key={person.id}>
     <h1>{person.name}</h1>  
