@@ -3,7 +3,7 @@ title: Form组件
 categories: [前端, React]
 tags: [前端, React]
 date: 2025-09-13 19:04
-updated: 2025-09-18 01:06
+updated: 2025-09-19 01:02
 wiki: react
 ---
 
@@ -104,7 +104,7 @@ submit(target, options)
 - `target`：提交数据，`SubmitTarget` 类型
 - `options`：表单属性及导航选项
 
-**`target` 参数**
+### `target` 参数
 
 `target` 参数为 `SubmitTarget` 类型，可以传入提交元素的 DOM、FormData、URL 查询参数以及 JSON 数据，定义如下
 
@@ -157,7 +157,7 @@ function MyForm() {
 }
 ```
 
-**`options` 参数**
+### `options` 参数
 
 `options` 参数接收一个对象，其中的可设置项与 Form 组件属性基本相同
 
@@ -167,7 +167,3 @@ function MyForm() {
 - `relative`
 - `replace`
 - `state`
-
-## useFetcher
-
-// todo
