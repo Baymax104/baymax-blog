@@ -3,7 +3,7 @@ title: 泛型和Trait
 categories: [Rust]
 tags: [Rust]
 date: 2024-11-22 12:51
-updated: 2025-07-07 01:45
+updated: 2025-10-04 21:35
 banner: /assets/banner/rust.png
 wiki: rust
 ---
@@ -357,7 +357,7 @@ impl A for AImpl2 {}
 let v: Vec<&A> = vec![&AImpl1, &AImpl2];
 ```
 
-这段代码会被编译器报错，因为这里没有使用 Trait 对象，使用 Trait 对象需要加上 `dyn` 关键字，以下代码可以编译通过
+这段代码会被编译器报错，因为这里没有使用 Trait 对象，在 Trait 前加上 `dyn` 关键字就可以使用 Trait 对象，以下代码可以编译通过
 
 ```rust
 let v: Vec<&dyn A> = vec![&AImpl1, &AImpl2];

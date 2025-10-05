@@ -24,3 +24,4 @@ tree:
   - rust-泛型
   - rust-生命周期
   - rust-格式化输出
+  - rust-闭包

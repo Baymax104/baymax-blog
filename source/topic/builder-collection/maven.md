@@ -143,7 +143,6 @@ my-web-app                   # 项目根目录
 ```
 
 > web 工程中的 jar 包其实就是 java 工程，因此 web 工程可以依赖多个 java 工程，而 java 工程不能依赖 web 工程，web 工程依赖的 java 工程存放在 `WEB-INF/lib` 目录下
-{: .prompt-info}
 
 ### maven 命令
 

@@ -3,7 +3,7 @@ title: 错误处理
 categories: [Rust]
 tags: [Rust]
 date: 2024-11-04 16:50
-updated: 2025-07-07 01:47
+updated: 2025-10-04 14:02
 banner: /assets/banner/rust.png
 wiki: rust
 ---
@@ -59,7 +59,6 @@ fn main() {
 ```
 
 > 若需要判断错误的类型，通常可以调用 `error.kind()` 获取一个错误类型的枚举，继续进行模式匹配解构
-{: .prompt-info}
 
 **Err 分支简写**
 
