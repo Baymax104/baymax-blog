@@ -7,3 +7,9 @@ description: >
 search:
   filter: /topic/spider/
   placeholder: 在专栏中搜索...
+
+tree:
+  - requests
+  - xpath
+  - selenium
+  - feapder

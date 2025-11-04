@@ -7,3 +7,9 @@ icon: /assets/logo/paper-logo.svg
 search:
   filter: /topic/paper/
   placeholder: 在专栏中搜索...
+
+tree:
+  - bert
+  - recommender-gnn-survey
+  - tacotron
+  - transformer

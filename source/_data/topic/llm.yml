@@ -8,3 +8,8 @@ description: >
 search:
   filter: /topic/llm/
   placeholder: 在专栏中搜索...
+
+tree:
+  - llm-prompt
+  - llm-system
+  - llm-langchain

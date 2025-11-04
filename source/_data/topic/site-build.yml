@@ -7,3 +7,8 @@ icon: /assets/logo/site-build-logo.svg
 search:
   filter: /topic/site-build/
   placeholder: 在专栏中搜索...
+
+tree:
+  - site-build-1
+  - site-build-2
+  - site-build-3

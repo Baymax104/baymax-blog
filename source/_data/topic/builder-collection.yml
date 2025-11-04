@@ -7,3 +7,8 @@ icon: /assets/logo/builder-logo.svg
 search:
   filter: /topic/builder-collection/
   placeholder: 在专栏中搜索...
+
+tree:
+  - cmake
+  - gradle
+  - maven
