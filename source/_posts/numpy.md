@@ -1,9 +1,9 @@
 ---
 title: Numpy基础
-categories: [Python]
+categories: [技术相关]
 tags: [Numpy, Python, 数据分析]
 date: 2024-05-29 18:39
-updated: 2025-07-07 01:57
+updated: 2025-11-11 18:25
 banner: /assets/banner/numpy.png
 ---
 ## ndarray 对象

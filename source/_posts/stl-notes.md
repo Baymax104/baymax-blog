@@ -1,9 +1,9 @@
 ---
 title: STL函数笔记
-categories: [Cpp]
+categories: [技术相关]
 tags: [Cpp, STL]
 date: 2024-03-08 20:08
-updated: 2025-07-07 00:43
+updated: 2025-11-11 18:25
 banner: /assets/banner/stl.png
 ---
 ## 前言

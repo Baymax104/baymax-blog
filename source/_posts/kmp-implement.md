@@ -1,9 +1,9 @@
 ---
 title: KMP代码实现详解
-categories: [算法]
+categories: [技术相关]
 tags: [算法, KMP]
 date: 2024-03-08 00:46
-updated: 2025-07-07 01:40
+updated: 2025-11-11 18:25
 ---
 ## 前言
 
@@ -106,19 +106,19 @@ void getNext(int* next, const string& p) {
 1. `i = 0, j = -1, p[i] = a`
 
    j == -1 判断为 true，令 next[++i]=++j，即 next[1] = 0
-   
+
 2. `i = 1, j = 0, p[i] = b, p[j] = a`
 
     p[i] == p[j] 判断为 false，令 j = next[j]，即 j = -1
-    
+
 3. `i = 1, j = -1, p[i] = b`
 
     j == -1 判断为 true，next[2] = 0
-    
+
 4. `i = 2, j = 0, p[i] = a, p[j] = a`
 
     p[i] == p[j] 判断为 true，next[3] = 1
-    
+
 5. i = 3 退出循环，得到 next = {-1, 0, 0, 1}
 
 #### Case1：p[i] = p[j]

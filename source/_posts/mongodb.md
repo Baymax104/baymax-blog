@@ -1,9 +1,9 @@
 ---
-title: MongoDB基础
-categories: [开发相关]
+title: MongoDB入门
+categories: [技术相关]
 tags: [MongoDB, 数据库, Database]
 date: 2024-05-26 15:39
-updated: 2025-07-07 01:44
+updated: 2025-11-11 18:25
 banner: /assets/banner/mongodb.jpg
 ---
 ## 开始

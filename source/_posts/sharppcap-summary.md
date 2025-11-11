@@ -1,9 +1,9 @@
 ---
 title: SharpPcap学习总结
-categories: [CSharp]
+categories: [技术相关]
 tags: [CSharp, SharpPcap]
 date: 2024-03-16 21:38
-updated: 2025-07-07 00:38
+updated: 2025-11-11 18:25
 ---
 ## 前言
 

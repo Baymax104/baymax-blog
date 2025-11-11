@@ -1,9 +1,9 @@
 ---
 title: SharpPcap数据包解析原理
-categories: [CSharp]
+categories: [技术相关]
 tags: [CSharp, SharpPcap]
 date: 2024-03-14 19:24
-updated: 2025-07-07 00:41
+updated: 2025-11-11 18:25
 ---
 ## 前言
 

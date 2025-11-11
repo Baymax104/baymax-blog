@@ -1,9 +1,9 @@
 ---
 title: K短路算法
-categories: [算法]
+categories: [技术相关]
 tags: [算法, 图论, 最短路径, K短路]
 date: 2024-06-01 18:36
-updated: 2025-07-07 01:04
+updated: 2025-11-11 18:25
 ---
 ## 前言
 

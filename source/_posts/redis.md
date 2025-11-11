@@ -1,9 +1,9 @@
 ---
-title: Redis基础
-categories: [开发相关]
+title: Redis入门
+categories: [技术相关]
 tags: [Redis, 数据库, Database]
 date: 2024-10-07 22:40
-updated: 2025-07-07 01:55
+updated: 2025-11-11 18:25
 banner: /assets/banner/redis.png
 ---
 ## 开始

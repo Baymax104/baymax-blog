@@ -1,9 +1,9 @@
 ---
 title: 8086汇编语言
-categories: []
+categories: [技术相关]
 tags: [汇编语言, Intel 8086, 计算机组成原理]
 date: 2024-06-03 21:21
-updated: 2025-07-07 00:20
+updated: 2025-11-11 18:25
 ---
 ## 前言
 

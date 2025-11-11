@@ -1,9 +1,9 @@
 ---
 title: JDBC基础
-categories: [Java]
+categories: [技术相关]
 tags: [Java, JDBC]
 date: 2024-04-14 18:40
-updated: 2025-07-07 01:13
+updated: 2025-11-11 18:25
 ---
 ## 开始
 

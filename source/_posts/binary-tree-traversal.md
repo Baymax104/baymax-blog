@@ -1,9 +1,9 @@
 ---
 title: 二叉树的遍历
-categories: [算法]
+categories: [技术相关]
 tags: [算法, 二叉树]
 date: 2024-03-15 21:25
-updated: 2025-07-07 00:21
+updated: 2025-11-11 18:25
 ---
 ## 前言
 

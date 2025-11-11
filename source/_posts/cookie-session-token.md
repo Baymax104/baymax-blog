@@ -1,9 +1,9 @@
 ---
 title: Cookie、Session、Token详解
-categories: [开发相关]
+categories: [技术相关]
 tags: [Cookie, Session, Token, JWT]
 date: 2025-08-30 22:33
-updated: 2025-08-30 22:33
+updated: 2025-11-11 18:25
 ---
 
 在现代 Web 应用中，用户身份认证与状态管理是构建安全、可靠系统的基础。随着前后端分离架构、单页应用（SPA）、移动端 API 调用等场景的普及，​​Cookie、Session 和 Token​​ 是三种最为常见的身份认证与状态管理机制。下面对三者的基本概念和区别进行分析

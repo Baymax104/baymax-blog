@@ -1,9 +1,9 @@
 ---
 title: 常见数据文本格式总结
-categories: [开发相关]
+categories: [技术相关]
 tags: [XML, JSON, YAML, TOML]
 date: 2024-10-24 16:00
-updated: 2025-07-07 00:16
+updated: 2025-11-11 18:25
 ---
 ## XML
 
