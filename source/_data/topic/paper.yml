@@ -13,3 +13,4 @@ tree:
   - recommender-gnn-survey
   - tacotron
   - transformer
+  - deepseek-moe

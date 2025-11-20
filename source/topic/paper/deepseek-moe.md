@@ -38,7 +38,7 @@ DeepSeekMoE 架构的完整形式化表示如下，其中 u^l_t 为 MoE 层输�
 
 $$
   
-\begin{align} h^l_t&=\sum\limits^{K_s}_{i=1}FFN_i(u^l_t)+\sum\limits^{mN}_{i=K_s+1}(g_{i,t}FFN_i(u^l_t))+u^l_t\\ g_{i,t}&=\left\{ \begin{aligned} s_{i,t},&s_{i,t}\in Topk(\{s_{j,t}|K_s+1\le j\le mN\},mK-K_s)\\ 0,&otherwise\\ \end{aligned} \right.\\ s_{i,t}&=Softmax_i({u^l_t}^Te^l_i) \end{align}  
+\begin{aligned} h^l_t&=\sum\limits^{K_s}_{i=1}FFN_i(u^l_t)+\sum\limits^{mN}_{i=K_s+1}(g_{i,t}FFN_i(u^l_t))+u^l_t\\ g_{i,t}&=\left\{ \begin{aligned} s_{i,t},&s_{i,t}\in Topk(\{s_{j,t}|K_s+1\le j\le mN\},mK-K_s)\\ 0,&otherwise\\ \end{aligned} \right.\\ s_{i,t}&=Softmax_i({u^l_t}^Te^l_i) \end{aligned}  
 $$
 
 ---
@@ -55,14 +55,14 @@ $$
 
 $$
   
-\begin{align} L_{Exp}&=\alpha_1 \sum\limits^{N'}_{i=1}f_iP_i\\ f_i&={N'\over K'T}\sum\limits^T_{t=1}Indicate(Token\quad t\quad selects\quad Expert\quad i)\\ P_i&={1\over T}\sum\limits^T_{t=1}s_{i,t} \end{align}  
+\begin{aligned} L_{Exp}&=\alpha_1 \sum\limits^{N'}_{i=1}f_iP_i\\ f_i&={N'\over K'T}\sum\limits^T_{t=1}Indicate(Token\quad t\quad selects\quad Expert\quad i)\\ P_i&={1\over T}\sum\limits^T_{t=1}s_{i,t} \end{aligned}  
 $$
 
 设备损失函数如下，其中专家被分为 D 个组\{d_1,d_2,…,d_D\}
 
 $$
   
-\begin{align} L_{Dev}&=\alpha_2\sum\limits^D_{i=1}f'_iP'_i\\ f'_i&={1\over |d_i|}\sum_{j\in d_i}f_j\\ P'_i&=\sum_{j\in d_i}P_j \end{align}  
+\begin{aligned} L_{Dev}&=\alpha_2\sum\limits^D_{i=1}f'_iP'_i\\ f'_i&={1\over |d_i|}\sum_{j\in d_i}f_j\\ P'_i&=\sum_{j\in d_i}P_j \end{aligned}  
 $$
 
 ## 结论
