@@ -3,14 +3,14 @@ title: "DeepSeekMoE: Towards Ultimate Expert Specialization in Mixture-of-Expert
 categories: [论文笔记]
 tags: [LLM, DeepSeek]
 date: 2025-11-20 18:31
-updated: 2025-11-20 18:36
+updated: 2025-11-28 18:37
 topic: paper
 ---
 ## 背景
 
 在传统 decoder-only 的大模型架构中，在 Self-Attention 层后使用 FFN 层处理输出，所有的 token 都需要经过整个 FFN 层权重矩阵的计算，计算开销大，且可计算的规模受限于权重矩阵的规模，模型难以扩展
 
-基于以上问题，考虑用 MoE 层替换 FFN 层，MoE 层有基于集成学习的思想，包含多个“专家模型”和一个路由
+基于以上问题，考虑用 MoE 层替换 FFN 层，MoE 层基于集成学习的思想，包含多个“专家模型”和一个路由
 
 - 专家模型：专家模型可以使用不同的模型，且可以独立扩展规模，在实践中，专家模型通常就是一个 FFN 层
     
@@ -28,13 +28,13 @@ MoE 层相当于将原先 FFN 层中的权重矩阵拆分为多个小权重矩�
 
 提出了 DeepSeekMoE 架构，相比一般 MoE 架构，引入了两个策略来优化专家的专业性
 
-1. 细粒度（fine-grained）的专家拆分将 N 个专家拆分为 mN 个专家，拆分后每个专家的规模为原先的 1\over m 倍，路由时，将 token 分配给 mK 个专家
+1. 细粒度（fine-grained）的专家拆分将 $N$ 个专家拆分为 $mN$ 个专家，拆分后每个专家的规模为原先的 $1\over m$ 倍，路由时，将 token 分配给 $mK$ 个专家
     
-2. 引入独立的共享专家多个专家之间可能存在相同的知识，会造成专家知识的冗余，因此在 mN 个专家中取 K_s 个独立的专家用于捕获共享的知识，共享知识与所有 token 进行计算，路由时有 mK-K_s 个专家参与分配
+2. 引入独立的共享专家多个专家之间可能存在相同的知识，会造成专家知识的冗余，因此在 $mN$ 个专家中取 $K_s$ 个独立的专家用于捕获共享的知识，共享知识与所有 token 进行计算，路由时有 $mK-K_s$ 个专家参与分配
 
 ![](deepseek-moe-1763634973649.png)
 
-DeepSeekMoE 架构的完整形式化表示如下，其中 u^l_t 为 MoE 层输入（Self-Attention 层输出），h^l_t 为 MoE 层输出
+DeepSeekMoE 架构的完整形式化表示如下，其中 $u^l_t$ 为 MoE 层输入（Self-Attention 层输出），$h^l_t$ 为 MoE 层输出
 
 $$
   
@@ -58,7 +58,7 @@ $$
 \begin{aligned} L_{Exp}&=\alpha_1 \sum\limits^{N'}_{i=1}f_iP_i\\ f_i&={N'\over K'T}\sum\limits^T_{t=1}Indicate(Token\quad t\quad selects\quad Expert\quad i)\\ P_i&={1\over T}\sum\limits^T_{t=1}s_{i,t} \end{aligned}  
 $$
 
-设备损失函数如下，其中专家被分为 D 个组\{d_1,d_2,…,d_D\}
+设备损失函数如下，其中专家被分为 D 个组 $\{d_1,d_2,…,d_D\}$
 
 $$
   
