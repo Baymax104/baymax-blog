@@ -1,10 +1,9 @@
 ---
-title: XPath元素定位
-categories: [Python, 爬虫]
+title: XPath入门
+categories: [技术相关]
 tags: [XPath, Python, 爬虫]
 date: 2024-06-09 23:10
 updated: 2025-07-06 22:07
-topic: spider
 ---
 ## 开始
 

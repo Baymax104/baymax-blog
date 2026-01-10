@@ -1,10 +1,9 @@
 ---
-title: Selenium自动化
-categories: [Python, 爬虫]
+title: Selenium自动化入门
+categories: [技术相关]
 tags: [Python, 爬虫, Selenium]
 date: 2024-09-11 18:53
 updated: 2025-07-07 00:26
-topic: spider
 ---
 ## 开始
 

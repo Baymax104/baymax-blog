@@ -21,5 +21,6 @@ tree:
   - android-broadcast
   - android-storage
   - android-service
+  - android-network
   - jetpack-compose
 
