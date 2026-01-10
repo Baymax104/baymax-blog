@@ -4,7 +4,7 @@ categories: [人工智能, 机器学习]
 tags: [人工智能, 机器学习, 聚类]
 date: 2025-03-07 19:10
 updated: 2025-07-06 21:16
-wiki: ml
+topic: ml
 ---
 ## 聚类任务
 

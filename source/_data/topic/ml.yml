@@ -1,20 +1,13 @@
 name: 《机器学习》
 title: 《机器学习》
 icon: /assets/logo/ml.jpg
-cover: /assets/logo/ml.jpg
-coverpage: true
-tags: 技术体系
-license: true
-share: true
 description: 算法是“死”的，思想才是“活”的。
 
 search:
-  filter: /wiki/ml/
-  placeholder: 在笔记中搜索...
+  filter: /topic/ml/
+  placeholder: 在专栏中搜索...
 
-base_dir: /wiki/ml/
 tree:
-  - ml-绪论
   - ml-模型评估
   - ml-线性模型
   - ml-决策树

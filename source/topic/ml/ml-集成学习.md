@@ -4,7 +4,7 @@ categories: [人工智能, 机器学习]
 tags: [人工智能, 机器学习, 集成学习]
 date: 2024-07-01 15:02
 updated: 2025-07-06 20:34
-wiki: ml
+topic: ml
 ---
 ## 个体与集成
 

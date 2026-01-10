@@ -4,7 +4,7 @@ categories: [人工智能, 机器学习]
 tags: [人工智能, 机器学习, 线性模型]
 date: 2024-06-15 23:19
 updated: 2025-07-06 20:41
-wiki: ml
+topic: ml
 ---
 ## 基本形式
 

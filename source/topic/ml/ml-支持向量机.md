@@ -4,7 +4,7 @@ categories: [人工智能, 机器学习]
 tags: [人工智能, 机器学习, SVM, 支持向量机]
 date: 2025-07-05 22:16
 updated: 2025-11-24 18:19
-wiki: ml
+topic: ml
 ---
 ## 基本型
 

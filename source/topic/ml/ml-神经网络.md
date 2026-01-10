@@ -4,7 +4,7 @@ categories: [人工智能, 机器学习]
 tags: [人工智能, 机器学习, 神经网络]
 date: 2024-06-21 17:08
 updated: 2025-07-06 21:36
-wiki: ml
+topic: ml
 ---
 ## 神经元模型
 

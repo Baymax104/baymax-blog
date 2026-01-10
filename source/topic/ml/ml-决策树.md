@@ -4,7 +4,7 @@ categories: [人工智能, 机器学习]
 tags: [人工智能, 机器学习, 决策树]
 date: 2024-06-15 23:20
 updated: 2025-07-06 20:46
-wiki: ml
+topic: ml
 ---
 ## 基本流程
 
