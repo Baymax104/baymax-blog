@@ -120,7 +120,7 @@ robots:
     - /archives/
     - /tags/
   sitemaps:
-    - https://baymaxam.top/sitemap.xml
+    - https://blog.baymaxam.top/sitemap.xml
 
 
 # Deployment
