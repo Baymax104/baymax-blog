@@ -299,7 +299,7 @@ Connection connection = source.getConnection();
 
 Apache 封装的数据库操作库
 
-###QueryRunner
+### QueryRunner
 
 QueryRunner 中一共有 6 种方法
 
