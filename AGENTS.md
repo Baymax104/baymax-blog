@@ -3,7 +3,7 @@
 ## 仓库定位
 
 - 这是一个 **Hexo 7** 博客仓库；优先使用 `package.json` 里的脚本作为入口，尤其是 `build`。当前根脚本只围绕 `hexo` CLI：`yarn build` = `hexo generate`，`yarn server` = 本地预览。
-- 主题不是普通目录拷贝：`themes/stellar` 由 `.gitmodules` 声明为 **git submodule**，远端是 `Baymax104/hexo-theme-stellar`。除非任务明确要求改主题，否则优先只改根配置和 `source/` 内容。
+- 主题不是普通目录拷贝：`themes/stellar` 由 `.gitmodules` 声明为 **git submodule**，远端是 `Baymax104/hexo-theme-stellar`。主题定制直接改 submodule 内的代码与配置，**不要**把主题配置堆进主仓库根 `_config.yml`；submodule 改动单独提交推送后，再在主仓库更新指针。主题代码结构见 `docs/theme-structure.md`。
 
 ## 最有用的命令
 
@@ -35,5 +35,5 @@
 ## 改动边界
 
 - **严禁修改文章与图片**：git 提交时即使它们有变动也不得 stage/commit，文章/图片完全由用户手动控制。范围包括 `source/_posts/`、`source/_drafts/`、`source/topic/`、`source/wiki/`、`source/about/` 等 Markdown 内容，以及所有图片资源（`source/assets/`、文章资源目录等）。提交时只能用精确的 `git add <file>` 暂存指定文件，禁止 `git add .` / `git add -A`。注意 `source/_data/` 属于配置清单，不在此禁令内。
-- `themes/stellar/_config.yml` 很大，承载菜单、评论、插件、样式和注入脚本；改这里前先确认是否真的不能在文章 front matter 或根 `_config.yml` 解决。
+- 主题定制优先直接改 `themes/stellar/`（submodule 内的 `_config.yml`、`layout/`、`scripts/`、`source/` 等），接受 submodule 单独提交；不要为图省事把主题配置塞进主仓库根 `_config.yml`。
 - 仓库根 `README` 目前为空；不要指望它提供项目说明，优先以 `package.json`、`_config.yml`、`source/_data/` 和主题配置作为事实来源。
