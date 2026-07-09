@@ -7,6 +7,14 @@ public/
 .deploy*/
 _multiconfig.yml
 
+# Yarn Berry：忽略缓存与安装状态，保留 patches/plugins/releases/sdks/versions
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
 .idea
 
 source/.obsidian
