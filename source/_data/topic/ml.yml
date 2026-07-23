@@ -1,19 +1,19 @@
-name: 《机器学习》
-title: 《机器学习》
+name: 机器学习
+title: 机器学习
 icon: /assets/logo/ml.jpg
-description: 算法是“死”的，思想才是“活”的。
+description: 机器学习是人工智能的一个分支，它使计算机系统能够利用数据和算法自动学习和改进其性能。
 
 search:
   filter: /topic/ml/
   placeholder: 在专栏中搜索...
 
 tree:
-  - ml-模型评估
-  - ml-线性模型
-  - ml-决策树
-  - ml-神经网络
-  - ml-支持向量机
-  - ml-贝叶斯
-  - ml-集成学习
-  - ml-聚类
-  - ml-强化学习
+  - 模型评估
+  - 线性模型
+  - 决策树
+  - 神经网络
+  - 支持向量机
+  - 贝叶斯
+  - 集成学习
+  - 聚类
+  - 强化学习
