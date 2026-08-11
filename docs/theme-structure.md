@@ -175,7 +175,7 @@ _plugins/index          # 可选插件样式
 
 1. **配置驱动**：`_config.yml` 的模块划分与代码模块一一对应，绝大多数定制只需改配置，不动代码。
 2. **三栏布局 + site_tree 路由**：每类页面在 `site_tree` 声明 `leftbar`/`rightbar` 用哪些 widget，`layout.ejs` 据此装配，无需为每种页面写独立布局。
-3. **生成器 + 数据清单联动**：wiki/topic 靠 `generators/*` 读 `source/_data/` 清单生成路由——主仓库的 `source/_data/wikis.yml` + `source/_data/wiki/<slug>.yml` 是入口，`events/lib/wiki_tree.js`/`topic_tree.js` 据此构建导航树。
+3. **生成器 + 项目数据联动**：wiki/topic 靠 `generators/*` 读取 `source/_data/wiki/<slug>.yml` 和 `source/_data/topic/<slug>.yml` 生成路由；项目是否在索引页上架由各自数据文件中的 `published` 字段控制，`sort` 控制展示顺序，`events/lib/wiki_tree.js`/`topic_tree.js` 据此构建导航树。
 4. **标签插件自成体系**：每个标签一个 `lib/*.js`，在 `tags/index.js` 注册；配套 `css/_components/tag-plugins/<name>.styl`。
 5. **按需加载**：前端 `data_services` 仅在页面渲染出对应标签/组件时才加载 JS，避免全站加载冗余脚本。
 6. **三层注入**：`inject` 支持 `config`（站点）→ `theme`（主题）→ `page`（front matter）叠加，用于注入统计、验证、第三方脚本。
@@ -184,7 +184,7 @@ _plugins/index          # 可选插件样式
 
 | 想做的事 | 去哪改 |
 |---------|--------|
-| 加一个 wiki | 主仓库 `source/_data/wikis.yml` + `source/_data/wiki/<slug>.yml` + `source/wiki/<slug>/*.md` |
+| 加一个 wiki | 主仓库 `source/_data/wiki/<slug>.yml`（含 `published` / `sort` / `tree`）+ `source/wiki/<slug>/*.md` |
 | 改主题色/字体/圆角 | `_config.yml` 的 `style` 段 |
 | 深度自定义样式 | `source/css/_custom/custom.styl` |
 | 新增/修改评论系统 | `_config.yml` 的 `comments` + `layout/_partial/comments/` |

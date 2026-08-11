@@ -1,5 +1,7 @@
 name: Android
 title: Android
+published: true
+sort: 700
 icon: /assets/logo/android-logo.svg
 cover: /assets/logo/android-logo.svg
 coverpage: true

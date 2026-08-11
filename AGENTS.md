@@ -21,10 +21,10 @@
 ## 内容与信息架构
 
 - 站点主配置在根目录 `_config.yml`，当前启用主题为 `stellar`，部署备注明确写着 **已使用 Vercel**，不要把 `hexo deploy` 当常规发布流程。
-- `source/_posts/` 放普通博客文章；wiki 与 topic 不是随意命名出来的，它们依赖 front matter + `_data` 清单联动：
-  - `wiki: <slug>` 对应 `source/_data/wiki/<slug>.yml`，总入口在 `source/_data/wikis.yml`
-  - `topic: <slug>` 对应 `source/_data/topic/<slug>.yml`，总入口在 `source/_data/topics.yml`
-- 如果新增或重命名 wiki/topic 页面，只改 Markdown 不够，通常还要同步更新对应 `_data` 文件里的 `tree` / 列表入口。
+- `source/_posts/` 放普通博客文章；wiki 与 topic 不是随意命名出来的，它们依赖 front matter + `_data` 项目配置联动：
+  - `wiki: <slug>` 对应 `source/_data/wiki/<slug>.yml`
+  - `topic: <slug>` 对应 `source/_data/topic/<slug>.yml`
+- 如果新增或重命名 wiki/topic 页面，只改 Markdown 不够，通常还要同步更新对应 `_data` 文件里的 `tree`、`published`、`sort` 等项目配置；`published: true` 才会在 wiki/topic 索引页上架。
 
 ## 写作与 Hexo 约束
 

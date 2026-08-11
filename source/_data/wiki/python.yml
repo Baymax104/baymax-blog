@@ -1,5 +1,7 @@
 name: Python
 title: Python
+published: true
+sort: 200
 icon: /assets/logo/python-logo.svg
 cover: /assets/logo/python-logo.svg
 coverpage: true

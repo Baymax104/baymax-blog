@@ -1,5 +1,7 @@
 name: Vue3
 title: Vue3
+published: true
+sort: 800
 icon: /assets/logo/vue3-logo.svg
 cover: /assets/logo/vue3-logo.svg
 coverpage: true

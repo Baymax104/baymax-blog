@@ -1,5 +1,7 @@
 name: 建站记录
 title: 博客施工记录
+published: true
+sort: 100
 description: 记录一下博客的施工过程
 order_by: -date
 icon: /assets/logo/site-build-logo.svg

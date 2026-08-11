@@ -1,5 +1,7 @@
 name: Jekyll CLI
 title: Jekyll CLI
+published: true
+sort: 500
 icon: /assets/logo/jekyll-logo.svg
 cover: /assets/logo/jekyll-logo.svg
 coverpage: true

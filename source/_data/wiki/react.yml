@@ -1,5 +1,7 @@
 name: React
 title: React
+published: true
+sort: 100
 icon: /assets/logo/react-logo.svg
 cover: /assets/logo/react-logo.svg
 coverpage: true

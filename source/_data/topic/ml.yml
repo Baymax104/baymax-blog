@@ -1,5 +1,7 @@
 name: 机器学习
 title: 机器学习
+published: true
+sort: 300
 icon: /assets/logo/ml.jpg
 description: 机器学习是人工智能的一个分支，它使计算机系统能够利用数据和算法自动学习和改进其性能。
 

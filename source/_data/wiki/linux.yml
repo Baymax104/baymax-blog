@@ -1,5 +1,7 @@
 name: Linux学习
 title: Linux
+published: false
+sort: 0
 icon: /assets/logo/linux-logo.svg
 cover: /assets/logo/linux-logo.svg
 coverpage: true

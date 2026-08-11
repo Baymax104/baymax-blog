@@ -1,5 +1,7 @@
 name: JavaScript
 title: JavaScript
+published: true
+sort: 400
 icon: /assets/logo/javascript-logo.svg
 cover: /assets/logo/javascript-logo.svg
 coverpage: true

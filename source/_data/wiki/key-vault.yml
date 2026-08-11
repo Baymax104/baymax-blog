@@ -1,5 +1,7 @@
 name: KeyVault
 title: KeyVault
+published: true
+sort: 300
 icon: /assets/logo/key-vault-logo.png
 cover: /assets/logo/key-vault-logo.png
 coverpage: true

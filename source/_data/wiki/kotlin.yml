@@ -1,5 +1,7 @@
 name: Kotlin
 title: Kotlin
+published: true
+sort: 900
 icon: /assets/logo/kotlin-logo.svg
 cover: /assets/logo/kotlin-logo.svg
 coverpage: true
