@@ -3,7 +3,7 @@ title: 从Transformer到LLM架构
 categories: [人工智能, 大模型]
 tags: [LLM, 大模型]
 date: 2026-07-23 17:20
-updated: 2026-08-13 14:41
+updated: 2026-08-13 15:04
 ---
 
 大语言模型并不是一种脱离 Transformer 而独立出现的新架构，而是在 Transformer 基础上经过长期演化与工程实践逐步形成的。从最初的 Encoder-Decoder，到如今主流的 Decoder-only，模型架构虽然不断变化，但其核心仍然围绕 Attention、FFN、位置编码、归一化等基本组件展开。本文将从原始 Transformer 出发，沿着架构演化的脉络逐步拆解现代 LLM 的核心组成，并结合参数量与计算量分析，理解这些组件为什么这样设计，以及它们最终如何共同构成今天的大语言模型
@@ -122,21 +122,21 @@ $$
 Scaled Dot-Product Attention 公式可以拆分为以下公式
 
 $$
-\begin{align}
-S&=QK^T\qquad &(N,d_{m})\times(d_{m},N)=(N,N)\tag{1} \\
-S_{scaled}&=\frac{S}{\sqrt{ d }}\tag{2} \\
-A&=\mathrm{Softmax}(S_{scaled})\tag{3} \\
-\mathrm{Attention}&=AV\qquad &(N,N)\times(N,d_{m})=(N,d_{m})\tag{4}
-\end{align}
+\begin{array}{rcllr}
+S &=& QK^T & (1) \\
+S_{\mathrm{scaled}} &=& \dfrac{S}{\sqrt{d}} & (2) \\
+A &=& \mathrm{Softmax}(S_{\mathrm{scaled}}) & (3) \\
+\mathrm{Attention} &=& AV & (4)
+\end{array}
 $$
 
-(1) 式计算原始的注意力分数，得到的结果是一个 $(N,N)$ 的矩阵，这导致了 $O(N^2)$ 的存储开销
+(1) 式计算原始的注意力分数，形状变化为 $(N,d_m)\times(d_m,N)=(N,N)$，得到的结果是一个 $(N,N)$ 的矩阵，这导致了 $O(N^2)$ 的存储开销
 
 (2) 式对原始注意力分数做缩放，保证注意力分数的方差与 Q、K 相同
 
 (3) 式将缩放后的注意力分数转换为概率分布，作为注意力权重
 
-(4) 式将注意力权重与 V 矩阵相乘，本质上就是按不同的注意力权重融合 V 向量的信息
+(4) 式将注意力权重与 V 矩阵相乘，形状变化为 $(N,N)\times(N,d_m)=(N,d_m)$，本质上就是按不同的注意力权重融合 V 向量的信息
 
 ### 缩放
 
