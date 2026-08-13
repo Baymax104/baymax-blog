@@ -122,12 +122,12 @@ $$
 Scaled Dot-Product Attention 公式可以拆分为以下公式
 
 $$
-\begin{aligned}
+\begin{align}
 S&=QK^T\qquad &(N,d_{m})\times(d_{m},N)=(N,N)\tag{1} \\
 S_{scaled}&=\frac{S}{\sqrt{ d }}\tag{2} \\
 A&=\mathrm{Softmax}(S_{scaled})\tag{3} \\
 \mathrm{Attention}&=AV\qquad &(N,N)\times(N,d_{m})=(N,d_{m})\tag{4}
-\end{aligned}
+\end{align}
 $$
 
 (1) 式计算原始的注意力分数，得到的结果是一个 $(N,N)$ 的矩阵，这导致了 $O(N^2)$ 的存储开销
