@@ -12,7 +12,7 @@ updated: 2026-08-13 15:04
 
 原始 Transformer 架构图如下
 
-![](road-to-llm-1784887836948.png)
+![](https://cos.baymaxam.top/blog/road-to-llm/road-to-llm-1784887836948.png)
 
 ### Encoder
 
@@ -65,7 +65,7 @@ Cross-Attention 在 Transformer 中用于连接 Encoder 和 Decoder，Encoder �
 
 目前的大模型都是由 Transformer 架构演变而来，主流上采用的是 Transformer 中的 Decoder 部分（Decoder-only），架构如下所示
 
-![](road-to-llm-1784890338201.png)
+![](https://cos.baymaxam.top/blog/road-to-llm/road-to-llm-1784890338201.png)
 
 该架构中主要包含以下组件
 
@@ -396,7 +396,7 @@ $$
 
 **GQA 参数量**
 
-设有 h 个 Q 头，注意力头维度为 $d_{h}$，有 g 个 K、V 头
+设有 h 个 Q 头，注意力头维度为 $d_{h}$，有 $h_{kv}$ 个 K、V 头
 
 每个 Q 头的权重形状为 $(d_{m},d_{h})$，共有 h 个 Q 头，则 Q 权重的参数量为
 
@@ -404,10 +404,10 @@ $$
 P_{Q}=d_{m}\cdot d_{h}\cdot h=d^2_{m}
 $$
 
-每个 K/V 头的权重形状为 $(d_{m},d_{h})$，共有 g 个 K/V 头，则 K/V 权重的参数量为
+每个 K/V 头的权重形状为 $(d_{m},d_{h})$，共有 $h_{kv}$ 个 K/V 头，则 K/V 权重的参数量为
 
 $$
-P_{K}=P_{V}=d_{m}\cdot d_{h}\cdot g
+P_{K}=P_{V}=d_{m}\cdot d_{h}\cdot h_{kv}
 $$
 
 输出投影权重 $W_{O}$ 的形状为 $(hd_{h},d_{m})$，参数量为
@@ -419,7 +419,7 @@ $$
 综上，GQA 总参数量为
 
 $$
-P_{GQA}=2d^2_{m}+2d_{m}d_{h}g
+P_{GQA}=2d^2_{m}+2d_{m}d_{h}h_{kv}
 $$
 
 ### 计算量分析
@@ -513,7 +513,7 @@ $$
 \mathrm{ReLU}(x)=\max(0,x)
 $$
 
-![](road-to-llm-1785755074312.png)
+![](https://cos.baymaxam.top/blog/road-to-llm/road-to-llm-1785755074312.png)
 
 该激活函数计算简单，不存在梯度衰减问题，但存在神经元死亡的问题，即一旦某个神经元输入值落在 ReLU 负半轴，ReLU 输出为 0，该神经元在反向传播时就无法更新权重，对模型计算几乎没有贡献
 
@@ -527,7 +527,7 @@ $$
 
 其中，$\Phi(x)$ 是标准正态分布的累积分布函数，函数处处可微
 
-![](road-to-llm-1785755053673.png)
+![](https://cos.baymaxam.top/blog/road-to-llm/road-to-llm-1785755053673.png)
 
 **Swish**
 
@@ -539,7 +539,7 @@ $$
 
 其中，$\sigma(x)$ 是 sigmoid 函数，$\beta$ 是一个可学习或固定的参数，当 $\beta=1$ 时，简写为 $\mathrm{SiLU}(x)=x\cdot \sigma(x)$
 
-![](road-to-llm-1785755282674.png)
+![](https://cos.baymaxam.top/blog/road-to-llm/road-to-llm-1785755282674.png)
 
 ### GLU
 
@@ -914,7 +914,7 @@ Pre-Norm 与 Post-Norm 的区别在于梯度的稳定性。Post-Norm 在残差�
 
 Decoder Block 架构如下图所示
 
-![](road-to-llm-1786100485685.png)
+![](https://cos.baymaxam.top/blog/road-to-llm/road-to-llm-1786100485685.png)
 
 定义模型配置参数表
 
