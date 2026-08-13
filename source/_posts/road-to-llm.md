@@ -1,10 +1,13 @@
 ---
-title: 从Transformer到LLM
+title: 从Transformer到LLM架构
 categories: [人工智能, 大模型]
 tags: [LLM, 大模型]
 date: 2026-07-23 17:20
-updated: 2026-08-11 22:11
+updated: 2026-08-13 14:41
 ---
+
+大语言模型并不是一种脱离 Transformer 而独立出现的新架构，而是在 Transformer 基础上经过长期演化与工程实践逐步形成的。从最初的 Encoder-Decoder，到如今主流的 Decoder-only，模型架构虽然不断变化，但其核心仍然围绕 Attention、FFN、位置编码、归一化等基本组件展开。本文将从原始 Transformer 出发，沿着架构演化的脉络逐步拆解现代 LLM 的核心组成，并结合参数量与计算量分析，理解这些组件为什么这样设计，以及它们最终如何共同构成今天的大语言模型
+
 ## Transformer
 
 原始 Transformer 架构图如下
@@ -1040,4 +1043,41 @@ Sampling 用于从词表概率分布中选取下一个 token，通常有以下�
 
 Top-P 采样是一种对概率分布的自适应采样方法。定义一个概率阈值参数 P，将 token 按概率从大到小排列，从最高概率 token 开始，将 token 加入候选集并累加概率，当累加概率超过概率阈值 P 时，停止加入 token，之后在候选集中进行随机采样
 
-## 自回归生成
+### 参数量分析
+
+对标准 Decoder-only 架构模型，定义模型配置参数表
+
+| 参数       | 含义               |
+| -------- | ---------------- |
+| $d_{m}$  | embedding 特征维度   |
+| $h$      | 注意力头数            |
+| $h_{kv}$ | K/V 注意力头数        |
+| $d_{h}$  | 注意力头特征维度         |
+| $d_{ff}$ | FFN 隐藏层维度        |
+| $V$      | 词表大小             |
+| $L$      | Decoder block 层数 |
+
+参数量推导如下
+
+$$
+\begin{aligned}
+P_{block}&=2d_{m}^2+2d_{m}d_{h}h_{kv}+3d_{m}d_{ff}+2d_{m} \\
+P_{emb}&=Vd_{m} \\
+P_{norm}&=d_{m} \\
+P_{lm}&=Vd_{m} \\
+P_{total}&=P_{emb}+L\cdot P_{block}+P_{norm}+P_{lm} \\
+&=2Vd_{m}+L(2d_{m}^2+2d_{m}d_{h}h_{kv}+3d_{m}d_{ff}+2d_{m})+d_{m}
+\end{aligned}
+$$
+
+以 LLaMA-2-13B 模型为例，模型配置为 $d_{m}=5120$，$h=h_{kv}=40$，$d_{h}=128$，$d_{ff}=13824$，$L=40$，$V=32000$
+
+根据公式，该模型参数量为 $327680000+40\times 317204480+5120=13015864320\approx 13B$
+
+### 计算量分析
+
+模型架构中的计算以矩阵乘法为主，因此模型计算量通常用矩阵乘法计算量来估算
+
+模型中主要做的是 $Y=XW$ 类的矩阵乘法。设 $X\in \mathbb{R}^{N\times d_{in}}$，$W\in \mathbb{R}^{d_{in}\times d_{out}}$，计算量为 $2Nd_{in}d_{out}$，且参数量 P 有 $P=d_{in}d_{out}$，则计算量 FLOPs 有 $\text{FLOPs}_{W}=2NP_{W}$。对所有 $XW$ 类矩阵乘法，总计算量为 $\text{FLOPs}=2NP_{W_{1}}+2NP_{W_{2}}+\dots=2NP_{total}$
+
+严格来说，Attention 计算中还有 $QK^T$ 和 $AV$ 两个不涉及到参数的矩阵乘法，这两个矩阵乘法的总计算量为 $L(2N^2hd_{h}+2N^2hd_{h})=4LN^2d_{m}$，渐进为 $O(LN^2d_{m})$，因此较完整的计算量估算为 $2NP_{total}+O(LN^2d_{m})$。但在大多数模型配置下，参数矩阵乘法占主导，因此通常估算计算量为 $2NP_{total}$
